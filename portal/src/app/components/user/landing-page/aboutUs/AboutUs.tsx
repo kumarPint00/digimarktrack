@@ -9,6 +9,11 @@ import ImageGrid3 from "../../../../../../public/imageGrid.png";
 const MainBox = styled(Box)(({ theme }) => ({
   padding: "1rem 0rem",
 }));
+const AboutUsBox = styled(Box)(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    justifyContent: "center",
+  },
+}));
 const Typographyh5 = styled(Typography)(({ theme }) => ({
   backgroundColor: "#932889",
   color: "white",
@@ -16,13 +21,24 @@ const Typographyh5 = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   width: "50%",
   borderRadius: "25px",
-  fontFamily: "cursive",
+
+  // fontFamily: "cursive",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
 }));
 const Typographyh3 = styled(Typography)(({ theme }) => ({
-  fontFamily: "cursive",
+  // fontFamily: "cursive",
+  textTransform: "capitalize",
+  [theme.breakpoints.down("sm")]: {
+    textAlign: "center",
+  },
 }));
 const Typographybody2 = styled(Typography)(({ theme }) => ({
-  fontFamily: "cursive",
+  // fontFamily: "cursive",
+  [theme.breakpoints.down("sm")]: {
+    textAlign: "justify",
+  },
 }));
 const IconBox = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -32,7 +48,7 @@ const IconGrid = styled(Grid)(({ theme }) => ({
   padding: "1rem 0rem",
 }));
 const IconTypography = styled(Typography)(({ theme }) => ({
-  fontFamily: "cursive",
+  // fontFamily: "cursive",
   fontSize: "large",
   fontWeight: 600,
   marginLeft: "10px",
@@ -43,7 +59,7 @@ const CheckIconBox = styled(Box)(({ theme }) => ({
   marginBottom: "5px",
 }));
 const CheckIconTypography = styled(Typography)(({ theme }) => ({
-  fontFamily: "cursive",
+  // fontFamily: "cursive",
   marginLeft: "10px",
   marginBottom: "0px",
 }));
@@ -51,7 +67,7 @@ const ExpTypography = styled(Typography)(({ theme }) => ({
   margin: "0",
   padding: "10px 10px",
   fontSize: "12px",
-  fontFamily: "cursive",
+  // fontFamily: "cursive",
   color: "white",
   backgroundColor: "#932889",
   textAlign: "center",
@@ -62,6 +78,12 @@ const ExpTypography = styled(Typography)(({ theme }) => ({
   top: "40.4rem",
   height: "215px",
   border: "3px solid white",
+  [theme.breakpoints.down("sm")]: {
+    position: "relative",
+    top: "-15px",
+    right: "0rem",
+    marginBottom: "-230px",
+  },
 }));
 
 const AboutUs = () => {
@@ -71,7 +93,7 @@ const AboutUs = () => {
         <Container maxWidth="xl">
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-              <Box>
+              <AboutUsBox>
                 <Typographyh5 variant="h5" color="initial" gutterBottom>
                   About us
                 </Typographyh5>
@@ -81,7 +103,7 @@ const AboutUs = () => {
                 <Typographybody2 variant="body2" color="initial" gutterBottom>
                   We are 100+ professional software engineers with more than 10
                   years of experience in delivering superior products Believe it
-                  because you've seen it. Here are real numbers
+                  because you&apos;ve seen it. Here are real numbers
                 </Typographybody2>
                 <IconGrid container spacing={3}>
                   <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
@@ -196,7 +218,7 @@ const AboutUs = () => {
                     </IconBox>
                   </Grid>
                 </IconGrid>
-              </Box>
+              </AboutUsBox>
             </Grid>
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <Grid container spacing={1}>

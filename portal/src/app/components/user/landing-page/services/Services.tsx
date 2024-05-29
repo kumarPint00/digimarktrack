@@ -11,16 +11,19 @@ const Typographyh5 = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   width: "300px",
   borderRadius: "25px",
-  fontFamily: "cursive",
+  // fontFamily: "cursive",
+  [theme.breakpoints.down("sm")]: {
+    width: "100%",
+  },
 }));
 const Typographyh3 = styled(Typography)(({ theme }) => ({
-  fontFamily: "cursive",
+  // fontFamily: "cursive",
 }));
 const Typographyh5Link = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   margin: "1rem 0rem",
   fontSize: "1.2rem",
-  fontFamily: "cursive",
+  // fontFamily: "cursive",
 }));
 const MainBox = styled(Box)(({ theme }) => ({
   padding: "1rem 0rem",
@@ -40,7 +43,7 @@ const Services = () => {
         <Container maxWidth="xl">
           <HeadingBox>
             <Typographyh5 variant="h5" color="initial" gutterBottom>
-              OUR BEST SERVICES
+              Our Best Services
             </Typographyh5>
             <Typographyh3 variant="h3" color="initial" gutterBottom>
               We Provide Best Services

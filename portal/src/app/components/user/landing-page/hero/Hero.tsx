@@ -9,6 +9,9 @@ const MainBox = styled(Box)(({ theme }) => ({
   backgroundSize: "cover",
   height: "100vh",
   width: "100%",
+  [theme.breakpoints.down('sm')]: {
+    backgroundPosition: "inherit",
+  },
 }));
 
 const HeroText = styled(Box)(({ theme }) => ({
@@ -16,6 +19,11 @@ const HeroText = styled(Box)(({ theme }) => ({
   position: "absolute",
   right: "50px",
   bottom: "50px",
+  [theme.breakpoints.down('sm')]: {
+    width: "357px",
+    right: "9px",
+    bottom: "77px",
+  },
 }));
 
 const HeroTypoH1 = styled(Typography)(({ theme }) => ({
