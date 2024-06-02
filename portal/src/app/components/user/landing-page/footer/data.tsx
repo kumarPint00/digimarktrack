@@ -1,11 +1,11 @@
-import face from "../../../../../../public/face.png";
-import x from "../../../../../../public/x.png";
-import linked from "../../../../../../public/linked.png";
-import insta from "../../../../../../public/insta.png";
-import footerarrow from "../../../../../../public/footerarrow.png";
-import addcall from "../../../../../../public/addcall.png";
-import addtel from "../../../../../../public/addtel.png";
-import addmail from "../../../../../../public/addmail.png";
+import face from "../../../../../../public/facewebp.webp";
+import x from "../../../../../../public/xwebp.webp";
+import linked from "../../../../../../public/linkedwebp.webp";
+import insta from "../../../../../../public/instawebp.webp";
+import footerarrow from "../../../../../../public/footerarrowwebp.webp";
+import addcall from "../../../../../../public/addcallwebp.webp";
+import addtel from "../../../../../../public/addtelwebp.webp";
+import addmail from "../../../../../../public/addmailwebp.webp";
 
 export const FooterIcons = [insta, x, face, linked];
 

@@ -8,6 +8,7 @@ import {
   CopywriteBox,
   CopyWriteTextTypo,
   FirstGridBox,
+  FooterMainBox,
   FooterTextTypo,
   ImageBox,
   LinkHeadTypo,
@@ -31,13 +32,7 @@ const Footer = () => {
       <NewsLetter />
       <MainBox>
         <Container maxWidth="xl">
-          <Box
-            sx={{
-              borderBottom: "2px solid white",
-              padding: "1rem 0rem",
-              paddingTop: "14rem",
-            }}
-          >
+          <FooterMainBox>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
                 <FirstGridBox>
@@ -129,7 +124,7 @@ const Footer = () => {
                 </ListMainBox>
               </Grid>
             </Grid>
-          </Box>
+          </FooterMainBox>
           <CopywriteBox>
             {CopyWriteText.map((item, index) => (
               <CopyWriteTextTypo

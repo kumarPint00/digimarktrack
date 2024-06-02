@@ -1,90 +1,22 @@
-"use client";
-import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import Imagegrid1 from "../../../../../../public/Rectangle 9.png";
 import Imagegrid2 from "../../../../../../public/Rectangle 7.png";
 import ImageGrid3 from "../../../../../../public/imageGrid.png";
-
-const MainBox = styled(Box)(({ theme }) => ({
-  padding: "1rem 0rem",
-}));
-const AboutUsBox = styled(Box)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    justifyContent: "center",
-  },
-}));
-const Typographyh5 = styled(Typography)(({ theme }) => ({
-  backgroundColor: "#932889",
-  color: "white",
-  padding: "5px 0px",
-  textAlign: "center",
-  width: "50%",
-  borderRadius: "25px",
-
-  // fontFamily: "cursive",
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-  },
-}));
-const Typographyh3 = styled(Typography)(({ theme }) => ({
-  // fontFamily: "cursive",
-  textTransform: "capitalize",
-  [theme.breakpoints.down("sm")]: {
-    textAlign: "center",
-  },
-}));
-const Typographybody2 = styled(Typography)(({ theme }) => ({
-  // fontFamily: "cursive",
-  [theme.breakpoints.down("sm")]: {
-    textAlign: "justify",
-  },
-}));
-const IconBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-}));
-const IconGrid = styled(Grid)(({ theme }) => ({
-  padding: "1rem 0rem",
-}));
-const IconTypography = styled(Typography)(({ theme }) => ({
-  // fontFamily: "cursive",
-  fontSize: "large",
-  fontWeight: 600,
-  marginLeft: "10px",
-}));
-const CheckIconBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  alignItems: "center",
-  marginBottom: "5px",
-}));
-const CheckIconTypography = styled(Typography)(({ theme }) => ({
-  // fontFamily: "cursive",
-  marginLeft: "10px",
-  marginBottom: "0px",
-}));
-const ExpTypography = styled(Typography)(({ theme }) => ({
-  margin: "0",
-  padding: "10px 10px",
-  fontSize: "12px",
-  // fontFamily: "cursive",
-  color: "white",
-  backgroundColor: "#932889",
-  textAlign: "center",
-  writingMode: "vertical-lr",
-  borderRadius: "25px",
-  position: "absolute",
-  right: "40rem",
-  top: "40.4rem",
-  height: "215px",
-  border: "3px solid white",
-  [theme.breakpoints.down("sm")]: {
-    position: "relative",
-    top: "-15px",
-    right: "0rem",
-    marginBottom: "-230px",
-  },
-}));
+import {
+  AboutUsBox,
+  CheckIconBox,
+  CheckIconTypography,
+  ExpTypography,
+  IconBox,
+  IconGrid,
+  IconTypography,
+  MainBox,
+  Typographybody2,
+  Typographyh3,
+  Typographyh5,
+} from "./styled";
 
 const AboutUs = () => {
   return (
