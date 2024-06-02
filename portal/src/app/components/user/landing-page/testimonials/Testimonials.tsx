@@ -37,6 +37,11 @@ const MainBox = styled(Box)(({ theme }) => ({
   backgroundSize: "contain",
   padding: "3rem 0rem",
   marginBottom: "2rem",
+  [theme.breakpoints.down("sm")]: {
+    backgroundImage: "none",
+    padding: "1rem 0rem",
+    marginBottom: "0.6rem",
+  },
 }));
 
 const HeadingBox = styled(Box)(({ theme }) => ({
@@ -55,7 +60,7 @@ const TestCard = styled(Card)(({ theme }) => ({
 
 const Typographyh5 = styled(Typography)(({ theme }) => ({
   backgroundColor: "#f6c460ff",
-  color: "white",
+  color: "black",
   padding: "5px 0px",
   textAlign: "center",
   width: "300px",
@@ -72,7 +77,9 @@ const Typographyh3 = styled(Typography)(({ theme }) => ({
   color: "white",
   textTransform: "capitalize",
   [theme.breakpoints.down("sm")]: {
-    fontSize:"2.5rem"
+    fontSize: "2.5rem",
+    color: "black",
+    textAlign: "center",
   },
 }));
 

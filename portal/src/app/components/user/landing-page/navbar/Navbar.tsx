@@ -20,22 +20,22 @@ import Image from "next/image";
 const NavlinksButton = styled(Button)(({ theme }) => ({
   textTransform: "capitalize",
   color: "black",
-  fontWeight:600,
-  cursor:"pointer",
+  fontWeight: 600,
+  cursor: "pointer",
 }));
 const NavIconButton = styled(Button)(({ theme }) => ({
   textTransform: "capitalize",
   color: "white",
   outline: "none",
-  margin:"0px 10px",
+  margin: "0px 10px",
   border: "1px solid #932889",
   "&:hover": {
     border: "1px solid #932889",
   },
-  borderRadius:"25px",
-  padding:"5px 15px"
-//   border-radius: 25px;
-//     padding: 0px 15px;
+  borderRadius: "25px",
+  padding: "5px 15px",
+  //   border-radius: 25px;
+  //     padding: 0px 15px;
 }));
 const NavlinksBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
@@ -48,9 +48,9 @@ const NavlinksBox = styled(Box)(({ theme }) => ({
   padding: "10px 45px",
   border: "1px solid white",
   borderRadius: "30px",
-  position: 'absolute',
-  right: '27%',
-  zIndex: '-1'
+  position: "absolute",
+  right: "27%",
+  zIndex: "-1",
 }));
 const NaviconbuttonBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
@@ -63,15 +63,35 @@ const NaviconbuttonBox = styled(Box)(({ theme }) => ({
   padding: "12px 35px",
   border: "1px solid black",
   borderRadius: "30px",
-  
+}));
+const MainBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+}));
+const DrawerMainBox = styled(Box)(({ theme }) => ({
+  textAlign: "center",
+}));
+const DrawerTypoh6 = styled(Typography)(({ theme }) => ({
+  my: 2,
+}));
+const DrawerListItemButton = styled(ListItemButton)(({ theme }) => ({
+  textAlign: "center",
+}));
+const MainIconButton = styled(IconButton)(({ theme }) => ({
+  marginRight: theme.spacing(2), // Correct usage of marginRight
+  [theme.breakpoints.down('sm')]: {
+    display: 'none',
+  },
 }));
 
 const ButtonIconImage = styled(Image)(({ theme }) => ({
-    marginLeft:"5px"
-  }));
+  marginLeft: "5px",
+}));
 const AppBarMain = styled(AppBar)(({ theme }) => ({
-    marginLeft:"5px"
-  }));
+  backgroundColor: "#932889",
+  position: "absolute",
+  top: "30px",
+  padding: "10px 0px",
+}));
 
 interface Props {
   /**
@@ -97,30 +117,36 @@ export default function DrawerAppBar(props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
-      <Typography variant="h6" sx={{ my: 2 }}>
-        MUI
-      </Typography>
+    <DrawerMainBox onClick={handleDrawerToggle}>
+      <DrawerTypoh6 variant="h6">MUI</DrawerTypoh6>
       <Divider />
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+            <DrawerListItemButton>
               <ListItemText primary={item} />
-            </ListItemButton>
+            </DrawerListItemButton>
           </ListItem>
         ))}
       </List>
-    </Box>
+    </DrawerMainBox>
   );
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <MainBox>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: "#932889", position:"absolute", top:"30px", padding:"10px 0px" }}>
+      <AppBar
+        component="nav"
+        sx={{
+          backgroundColor: "#932889",
+          position: "absolute",
+          top: "30px",
+          padding: "10px 0px",
+        }}
+      >
         <Toolbar>
           <IconButton
             color="inherit"
@@ -145,7 +171,7 @@ export default function DrawerAppBar(props: Props) {
           </NavlinksBox>
           <NaviconbuttonBox>
             <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Box sx={{display:"flex"}}>
+              <Box sx={{ display: "flex" }}>
                 <Image
                   src="/lang-icon.png"
                   alt="language-icon"
@@ -157,12 +183,12 @@ export default function DrawerAppBar(props: Props) {
                 {navButtonIcon.map((item, index) => (
                   <NavIconButton key={index} variant="outlined" size="small">
                     {item.text}
-                      <ButtonIconImage
-                        src={item.icon}
-                        height={20}
-                        width={20}
-                        alt={item.text}
-                      />
+                    <ButtonIconImage
+                      src={item.icon}
+                      height={20}
+                      width={20}
+                      alt={item.text}
+                    />
                   </NavIconButton>
                 ))}
               </Box>
@@ -190,6 +216,6 @@ export default function DrawerAppBar(props: Props) {
           {drawer}
         </Drawer>
       </nav>
-    </Box>
+    </MainBox>
   );
 }

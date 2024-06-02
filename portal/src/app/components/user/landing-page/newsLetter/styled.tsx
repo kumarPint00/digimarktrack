@@ -28,6 +28,10 @@ export const MainBox = styled(Box)(({ theme }) => ({
     top: "-3rem",
     marginBottom: "-200px",
     marginTop: "8rem",
+    [theme.breakpoints.down("sm")]: {
+      display:"none"
+    },
+    
   }));
   export const TextfieldBox = styled(Box)(({ theme }) => ({
     display: "flex",
