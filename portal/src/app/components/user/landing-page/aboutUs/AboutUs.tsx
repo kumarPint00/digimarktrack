@@ -1,9 +1,9 @@
 import { Container, Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import Imagegrid1 from "../../../../../../public/Rectangle 9.png";
-import Imagegrid2 from "../../../../../../public/Rectangle 7.png";
-import ImageGrid3 from "../../../../../../public/imageGrid.png";
+import Imagegrid1 from "../../../../../../public/Rectangle 9webp.webp";
+import Imagegrid2 from "../../../../../../public/Rectangle 7webp.webp";
+import ImageGrid3 from "../../../../../../public/imageGridwebp.webp";
 import {
   AboutUsBox,
   CheckIconBox,
@@ -12,6 +12,9 @@ import {
   IconBox,
   IconGrid,
   IconTypography,
+  Image1,
+  Image2,
+  Image3,
   MainBox,
   Typographybody2,
   Typographyh3,
@@ -40,16 +43,11 @@ const AboutUs = () => {
                 <IconGrid container spacing={3}>
                   <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                     <IconBox>
-                      <Image
-                        src="/save-money 1.png"
+                      <Image1
+                        src="/save-money 1webp.webp"
                         alt="image"
                         height={50}
                         width={50}
-                        style={{
-                          backgroundColor: "#6907A8",
-                          padding: "10px",
-                          borderRadius: "7px",
-                        }}
                       />
 
                       <IconTypography
@@ -63,16 +61,11 @@ const AboutUs = () => {
                   </Grid>
                   <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                     <IconBox>
-                      <Image
-                        src="/save-time 1.png"
+                      <Image1
+                        src="/save-time 1webp.webp"
                         alt="image"
                         height={50}
                         width={50}
-                        style={{
-                          backgroundColor: "#6907A8",
-                          padding: "10px",
-                          borderRadius: "7px",
-                        }}
                       />
 
                       <IconTypography
@@ -87,7 +80,7 @@ const AboutUs = () => {
                   <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                     <CheckIconBox>
                       <Image
-                        src="/Check.png"
+                        src="/Checkwebp.webp"
                         alt="image"
                         height={25}
                         width={25}
@@ -102,7 +95,7 @@ const AboutUs = () => {
                     </CheckIconBox>
                     <CheckIconBox>
                       <Image
-                        src="/Check.png"
+                        src="/Checkwebp.webp"
                         alt="image"
                         height={25}
                         width={25}
@@ -118,16 +111,11 @@ const AboutUs = () => {
                   </Grid>
                   <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                     <IconBox>
-                      <Image
-                        src="/aboutcall.png"
+                      <Image1
+                        src="/aboutcallwebp.webp"
                         alt="image"
                         height={50}
                         width={50}
-                        style={{
-                          backgroundColor: "#6907A8",
-                          padding: "10px",
-                          borderRadius: "7px",
-                        }}
                       />
 
                       <IconTypography
@@ -137,13 +125,7 @@ const AboutUs = () => {
                       >
                         (0000) 54 7556
                         <br />
-                        <span
-                          style={{
-                            fontSize: "small",
-                            fontWeight: 500,
-                            color: "#6907a8",
-                          }}
-                        >
+                        <span className="aboutUsLinkSpan">
                           Have any Question?
                         </span>
                       </IconTypography>
@@ -158,38 +140,11 @@ const AboutUs = () => {
                   <ExpTypography variant="body1" color="initial" gutterBottom>
                     5+ Years of Working Experience
                   </ExpTypography>
-                  <Image
-                    src={Imagegrid1}
-                    alt="image"
-                    style={{
-                      height: "386px",
-                      width: "100%",
-                      objectFit: "cover",
-                      borderRadius: "8px",
-                    }}
-                  />
+                  <Image2 src={Imagegrid1} alt="image" />
                 </Grid>
                 <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-                  <Image
-                    src={Imagegrid2}
-                    alt="image"
-                    style={{
-                      height: "190px",
-                      width: "100%",
-                      objectFit: "cover",
-                      borderRadius: "8px",
-                    }}
-                  />
-                  <Image
-                    src={ImageGrid3}
-                    alt="image"
-                    style={{
-                      height: "190px",
-                      width: "100%",
-                      objectFit: "cover",
-                      borderRadius: "8px",
-                    }}
-                  />
+                  <Image3 src={Imagegrid2} alt="image" />
+                  <Image3 src={ImageGrid3} alt="image" />
                 </Grid>
               </Grid>
             </Grid>

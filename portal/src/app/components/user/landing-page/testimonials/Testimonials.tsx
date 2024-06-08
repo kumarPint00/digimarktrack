@@ -1,100 +1,18 @@
-"use client";
-import { Box, Typography, styled, Container, Grid, Card } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
-import StarIcon from "@mui/icons-material/Star";
-import Test1 from "../../../../../../public/test1.png";
-import Test2 from "../../../../../../public/test2.png";
-import Test3 from "../../../../../../public/test3.png";
-import Test4 from "../../../../../../public/test4.png";
-
-const CardData = [
-  {
-    image: Test1,
-    text: "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
-    name: "William",
-  },
-  {
-    image: Test2,
-    text: "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
-    name: "Charlotte",
-  },
-  {
-    image: Test3,
-    text: "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
-    name: "Alexander",
-  },
-  {
-    image: Test4,
-    text: "I was impressed by their commitment to going the extra mile. They've helped us stay ahead of the curve in our industry",
-    name: "Brooklyn",
-  },
-];
-
-const MainBox = styled(Box)(({ theme }) => ({
-  backgroundImage: "url(/testimonialBackground.png)",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "contain",
-  padding: "3rem 0rem",
-  marginBottom: "2rem",
-  [theme.breakpoints.down("sm")]: {
-    backgroundImage: "none",
-    padding: "1rem 0rem",
-    marginBottom: "0.6rem",
-  },
-}));
-
-const HeadingBox = styled(Box)(({ theme }) => ({
-  textAlign: "left" as any,
-}));
-
-const ImageTextBox = styled(Box)(({ theme }) => ({
-  display: "flex",
-  columnGap: "10px",
-  borderBottom: "1.5px solid black",
-}));
-
-const TestCard = styled(Card)(({ theme }) => ({
-  padding: "1rem",
-}));
-
-const Typographyh5 = styled(Typography)(({ theme }) => ({
-  backgroundColor: "#f6c460ff",
-  color: "black",
-  padding: "5px 0px",
-  textAlign: "center",
-  width: "300px",
-  borderRadius: "25px",
-  // fontFamily: "cursive",
-  textTransform: "capitalize",
-  [theme.breakpoints.down("sm")]: {
-    width: "100%",
-  },
-}));
-
-const Typographyh3 = styled(Typography)(({ theme }) => ({
-  // fontFamily: "cursive",
-  color: "white",
-  textTransform: "capitalize",
-  [theme.breakpoints.down("sm")]: {
-    fontSize: "2.5rem",
-    color: "black",
-    textAlign: "center",
-  },
-}));
-
-const Typographyh6 = styled(Typography)(({ theme }) => ({
-  // fontFamily: "cursive",
-}));
-
-const TextTypography = styled(Typography)(({ theme }) => ({
-  fontSize: "13px",
-  // fontFamily: "cursive",
-}));
-
-const RatingStarIcon = styled(StarIcon)(({ theme }) => ({
-  color: "#f6c460ff",
-}));
+import {
+  HeadingBox,
+  ImageTextBox,
+  MainBox,
+  RatingStarIcon,
+  TestCard,
+  TextTypography,
+  Typographyh3,
+  Typographyh5,
+  Typographyh6,
+} from "./styled";
+import { CardData } from "./data";
 
 const Testimonials = () => {
   return (

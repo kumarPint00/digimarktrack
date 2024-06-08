@@ -1,5 +1,5 @@
-import blog1 from "../../../../../../public/blog1.png";
-import blog2 from "../../../../../../public/blog2.png";
+import blog1 from "../../../../../../public/blog1webp.webp";
+import blog2 from "../../../../../../public/blog2webp.webp";
 
 export const BlogImg = [blog1, blog2];
 

@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
-import newsletterimg from "../../../../../../public/newsletterimg.png";
+import newsletterimg from "../../../../../../public/newsletterimgwebp.webp";
 import {
   FieldButton,
   HeadText,

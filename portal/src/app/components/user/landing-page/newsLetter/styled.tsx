@@ -3,7 +3,7 @@ import { Box, Button, TextField, Typography, styled } from "@mui/material";
 import Image from "next/image";
 
 export const MainBox = styled(Box)(({ theme }) => ({
-    backgroundImage: "url(/newsletterbg.png)",
+    backgroundImage: "url(/newsletterbgwebp.webp)",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",

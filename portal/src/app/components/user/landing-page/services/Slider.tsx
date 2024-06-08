@@ -1,50 +1,12 @@
-import { Card, CardContent, Grid, Typography, styled } from "@mui/material";
+"use client";
+import { CardContent, Grid } from "@mui/material";
 import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import top1 from "../../../../../../public/top1.png";
-import top2 from "../../../../../../public/top2.png";
-import top3 from "../../../../../../public/top3.png";
-import bottom1 from "../../../../../../public/bottom1.png";
-import bottom2 from "../../../../../../public/bottom2.png";
-import bottom3 from "../../../../../../public/bottom3.png";
+
 import Image from "next/image";
-
-interface MainCardProps {
-  gradient: string;
-}
-
-const MainCard = styled(Card)<MainCardProps>(({ gradient }) => ({
-  background: gradient,
-  height: "480px",
-  minWidth: 275,
-  maxWidth: 380,
-}));
-const MainGrid = styled(Grid)(({ theme }) => ({
-  justifyContent: "center",
-  display: "flex",
-  alignItems: "center",
-}));
-const TitleTypography = styled(Typography)(({ theme }) => ({
-  textAlign: "center",
-  fontSize: "1.5rem",
-  color: "white",
-  // fontFamily: "cursive",
-  height: "5.3rem",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-const ParaTypography = styled(Typography)(({ theme }) => ({
-  textAlign: "center",
-  fontSize: "1rem",
-  color: "white",
-  // fontFamily: "cursive",
-  height: "9.3rem",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
+import { MainCard, MainGrid, ParaTypography, TitleTypography } from "./styled";
+import { CardData } from "./data";
 
 const Slider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -60,30 +22,6 @@ const Slider: React.FC = () => {
   const onClickThumb = (index: any) => {
     console.log(`Clicked thumb at index ${index}`);
   };
-
-  const CardData = [
-    {
-      imageTop: top1,
-      title: "Web Design & Development",
-      para: "We build websites that adds value to the business. Our website designs made to convert the potential customers into prospect and then into real customers.",
-      imageBottom: bottom1,
-      gradient: "linear-gradient(270deg, #d015bbff 0%, #66075bff 100%)",
-    },
-    {
-      imageTop: top2,
-      title: "Mobile App Development(IOS and Android)",
-      para: "Designs & graphics is the best medium to showcase the brand or company. We build brands form scratch starting from Logo designing to Advert designing and more.",
-      imageBottom: bottom2,
-      gradient: "linear-gradient(270deg, #5cefffff 0%, #048a99ff 100%)",
-    },
-    {
-      imageTop: top3,
-      title: "Digital Marketing & Strategy",
-      para: "We are a performance-driven digital agency, we create and develop digital marketing strategies and campaigns that include various digital strategy and branding, social, e-commerce & more.",
-      imageBottom: bottom3,
-      gradient: "linear-gradient(270deg, #b959f5ff 0%, #791fb2ff 100%)",
-    },
-  ];
 
   // Group data into sets of three cards
   const groupedData = CardData.reduce((acc: any, current: any, index: any) => {

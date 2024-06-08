@@ -2,8 +2,10 @@
 import { Box, ListItemText, Typography, styled } from "@mui/material";
 
 export const MainBox = styled(Box)(({ theme }) => ({
-  backgroundImage: `url("/footerimg.png")`,
-  height: "80vh",
+  backgroundImage: `url("/footerimgwebp.webp")`,
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
   [theme.breakpoints.down("sm")]: {
     position: "relative",
     top: "50rem",
@@ -36,6 +38,12 @@ export const AddIconTextBox = styled(Box)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   marginBottom: "5px",
+}));
+export const LogoImageBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  marginBottom: "10px",
 }));
 export const CopywriteBox = styled(Box)(({ theme }) => ({
   display: "flex",

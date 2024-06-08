@@ -1,7 +1,8 @@
 import React from "react";
 import NewsLetter from "../newsLetter/NewsLetter";
-import { Box, Container, Grid, List, ListItem } from "@mui/material";
+import { Container, Grid, List, ListItem } from "@mui/material";
 import Image from "next/image";
+import logo from "../../../../../../public/footer logo 360.webp";
 import {
   AddIconTextBox,
   AddressIconTextTypo,
@@ -15,6 +16,7 @@ import {
   ListBox,
   ListMainBox,
   ListText,
+  LogoImageBox,
   MainBox,
 } from "./styled";
 import {
@@ -36,6 +38,9 @@ const Footer = () => {
             <Grid container spacing={3}>
               <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
                 <FirstGridBox>
+                  <LogoImageBox>
+                    <Image src={logo} alt="logo" height={50} width={100}  />
+                  </LogoImageBox>
                   <FooterTextTypo variant="body1" color="initial" gutterBottom>
                     We are 100+ professional software engin with more than 10
                     years of experience in delivering superior products Believe
