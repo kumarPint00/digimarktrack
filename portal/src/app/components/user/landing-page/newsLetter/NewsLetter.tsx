@@ -1,5 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
+import { useTranslations } from 'next-intl';
 import newsletterimg from "../../../../../../public/newsletterimg.png";
 import {
   FieldButton,
@@ -13,6 +14,8 @@ import {
 } from "./styled";
 
 const NewsLetter = () => {
+  const t = useTranslations('newsletter');
+
   return (
     <>
       <PositionRelativeBox>
@@ -26,11 +29,10 @@ const NewsLetter = () => {
             />
             <TextBox>
               <HeadText variant="h3" color="initial">
-                Subscribe To Our Newsletter!
+                {t('heading')}
               </HeadText>
               <HeadText variant="body1" color="initial">
-                We are 100 professional software engineers with mor the 10 years
-                in delive ring super products it because you&apos;ve seen it
+                {t('subheading')}
               </HeadText>
               <TextfieldBox>
                 <TextFieldMain
@@ -41,7 +43,7 @@ const NewsLetter = () => {
                   }}
                 />
                 <FieldButton size="small" variant="contained">
-                  Subscribe Now
+                  {t('buttonText')}
                 </FieldButton>
               </TextfieldBox>
             </TextBox>

@@ -1,4 +1,5 @@
-import { Card, CardContent, Grid, Typography, styled } from "@mui/material";
+"use client";
+import { Box, Card, CardContent, Grid, Typography, styled } from "@mui/material";
 import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -9,6 +10,7 @@ import bottom1 from "../../../../../../public/bottom1.png";
 import bottom2 from "../../../../../../public/bottom2.png";
 import bottom3 from "../../../../../../public/bottom3.png";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 interface MainCardProps {
   gradient: string;
@@ -29,7 +31,6 @@ const TitleTypography = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   fontSize: "1.5rem",
   color: "white",
-  // fontFamily: "cursive",
   height: "5.3rem",
   display: "flex",
   alignItems: "center",
@@ -39,7 +40,6 @@ const ParaTypography = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   fontSize: "1rem",
   color: "white",
-  // fontFamily: "cursive",
   height: "9.3rem",
   display: "flex",
   alignItems: "center",
@@ -48,6 +48,7 @@ const ParaTypography = styled(Typography)(({ theme }) => ({
 
 const Slider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const t = useTranslations('slider');
 
   const onChange = (index: any) => {
     setCurrentIndex(index);
@@ -60,40 +61,6 @@ const Slider: React.FC = () => {
   const onClickThumb = (index: any) => {
     console.log(`Clicked thumb at index ${index}`);
   };
-
-  const CardData = [
-    {
-      imageTop: top1,
-      title: "Web Design & Development",
-      para: "We build websites that adds value to the business. Our website designs made to convert the potential customers into prospect and then into real customers.",
-      imageBottom: bottom1,
-      gradient: "linear-gradient(270deg, #d015bbff 0%, #66075bff 100%)",
-    },
-    {
-      imageTop: top2,
-      title: "Mobile App Development(IOS and Android)",
-      para: "Designs & graphics is the best medium to showcase the brand or company. We build brands form scratch starting from Logo designing to Advert designing and more.",
-      imageBottom: bottom2,
-      gradient: "linear-gradient(270deg, #5cefffff 0%, #048a99ff 100%)",
-    },
-    {
-      imageTop: top3,
-      title: "Digital Marketing & Strategy",
-      para: "We are a performance-driven digital agency, we create and develop digital marketing strategies and campaigns that include various digital strategy and branding, social, e-commerce & more.",
-      imageBottom: bottom3,
-      gradient: "linear-gradient(270deg, #b959f5ff 0%, #791fb2ff 100%)",
-    },
-  ];
-
-  // Group data into sets of three cards
-  const groupedData = CardData.reduce((acc: any, current: any, index: any) => {
-    const groupIndex = Math.floor(index / 3);
-    if (!acc[groupIndex]) {
-      acc[groupIndex] = [];
-    }
-    acc[groupIndex].push(current);
-    return acc;
-  }, []);
 
   return (
     <Carousel
@@ -109,36 +76,76 @@ const Slider: React.FC = () => {
       interval={10000}
       transitionTime={3000}
     >
-      {groupedData.map((group: any, groupIndex: any) => (
-        <div key={groupIndex}>
-          <Grid container spacing={1}>
-            {group.map((item: any, index: any) => (
-              <MainGrid key={index} item xs={12} sm={4} md={4} lg={4} xl={4}>
-                <MainCard gradient={item.gradient}>
-                  <CardContent>
-                    <Image
-                      src={item.imageTop}
-                      alt={item.title}
-                      style={{ height: "50px", width: "50px" }}
-                    />
-                    <TitleTypography variant="h3" gutterBottom>
-                      {item.title}
-                    </TitleTypography>
-                    <ParaTypography variant="body2" gutterBottom>
-                      {item.para}
-                    </ParaTypography>
-                    <Image
-                      src={item.imageBottom}
-                      alt={item.title}
-                      style={{ height: "10rem", width: "10rem" }}
-                    />
-                  </CardContent>
-                </MainCard>
-              </MainGrid>
-            ))}
-          </Grid>
-        </div>
-      ))}
+      <Box>
+        <Grid container spacing={1}>
+          <MainGrid item xs={12} sm={4} md={4} lg={4} xl={4}>
+            <MainCard gradient="linear-gradient(270deg, #d015bbff 0%, #66075bff 100%)">
+              <CardContent>
+                <Image
+                  src={top1}
+                  alt="Title 1"
+                  style={{ height: "50px", width: "50px" }}
+                />
+                <TitleTypography variant="h3" gutterBottom>
+                  {t('cards.0.title')}
+                </TitleTypography>
+                <ParaTypography variant="body2" gutterBottom>
+                  {t('cards.0.para')}
+                  </ParaTypography>
+                <Image
+                  src={bottom1}
+                  alt="Title 1"
+                  style={{ height: "10rem", width: "10rem" }}
+                />
+              </CardContent>
+            </MainCard>
+          </MainGrid>
+          <MainGrid item xs={12} sm={4} md={4} lg={4} xl={4}>
+            <MainCard gradient="linear-gradient(270deg, #5cefffff 0%, #048a99ff 100%)">
+              <CardContent>
+                <Image
+                  src={top2}
+                  alt="Title 2"
+                  style={{ height: "50px", width: "50px" }}
+                />
+                <TitleTypography variant="h3" gutterBottom>
+                  {t('cards.1.title')}
+                </TitleTypography>
+                <ParaTypography variant="body2" gutterBottom>
+                  {t('cards.1.para')}
+                </ParaTypography>
+                <Image
+                  src={bottom2}
+                  alt="Title 2"
+                  style={{ height: "10rem", width: "10rem" }}
+                />
+              </CardContent>
+            </MainCard>
+          </MainGrid>
+          <MainGrid item xs={12} sm={4} md={4} lg={4} xl={4}>
+            <MainCard gradient="linear-gradient(270deg, #b959f5ff 0%, #791fb2ff 100%)">
+              <CardContent>
+                <Image
+                  src={top3}
+                  alt="Title 3"
+                  style={{ height: "50px", width: "50px" }}
+                />
+                <TitleTypography variant="h3" gutterBottom>
+                  {t('cards.2.title')}
+                </TitleTypography>
+                <ParaTypography variant="body2" gutterBottom>
+                  {t('cards.2.para')}
+                </ParaTypography>
+                <Image
+                  src={bottom3}
+                  alt="Title 3"
+                  style={{ height: "10rem", width: "10rem" }}
+                />
+              </CardContent>
+            </MainCard>
+          </MainGrid>
+        </Grid>
+      </Box>
     </Carousel>
   );
 };

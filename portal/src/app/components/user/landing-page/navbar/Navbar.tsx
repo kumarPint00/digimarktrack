@@ -1,112 +1,103 @@
-"use client";
-import * as React from "react";
-import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import CssBaseline from "@mui/material/CssBaseline";
-import Divider from "@mui/material/Divider";
-import Drawer from "@mui/material/Drawer";
-import IconButton from "@mui/material/IconButton";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import MenuIcon from "@mui/icons-material/Menu";
-import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import { styled } from "@mui/material";
-import Image from "next/image";
+'use client';
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import CssBaseline from '@mui/material/CssBaseline';
+import Divider from '@mui/material/Divider';
+import Drawer from '@mui/material/Drawer';
+import IconButton from '@mui/material/IconButton';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemText from '@mui/material/ListItemText';
+import MenuIcon from '@mui/icons-material/Menu';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import { styled } from '@mui/material';
+import Image from 'next/image';
+import LocaleSwitcher from '@/app/components/LanguageChanger';
+import { useTranslations } from 'next-intl';
 
 const NavlinksButton = styled(Button)(({ theme }) => ({
-  textTransform: "capitalize",
-  color: "black",
+  textTransform: 'capitalize',
+  color: 'black',
   fontWeight: 600,
-  cursor: "pointer",
+  cursor: 'pointer',
 }));
 const NavIconButton = styled(Button)(({ theme }) => ({
-  textTransform: "capitalize",
-  color: "white",
-  outline: "none",
-  margin: "0px 10px",
-  border: "1px solid #932889",
-  "&:hover": {
-    border: "1px solid #932889",
+  textTransform: 'capitalize',
+  color: 'white',
+  outline: 'none',
+  margin: '0px 10px',
+  border: '1px solid #932889',
+  '&:hover': {
+    border: '1px solid #932889',
   },
-  borderRadius: "25px",
-  padding: "5px 15px",
-  //   border-radius: 25px;
-  //     padding: 0px 15px;
+  borderRadius: '25px',
+  padding: '5px 15px',
 }));
 const NavlinksBox = styled(Box)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    display: "none",
+  [theme.breakpoints.down('sm')]: {
+    display: 'none',
   },
-  [theme.breakpoints.up("sm")]: {
-    display: "block",
+  [theme.breakpoints.up('sm')]: {
+    display: 'block',
   },
-  backgroundColor: "white",
-  padding: "10px 45px",
-  border: "1px solid white",
-  borderRadius: "30px",
-  position: "absolute",
-  right: "27%",
-  zIndex: "-1",
+  backgroundColor: 'white',
+  padding: '10px 45px',
+  border: '1px solid white',
+  borderRadius: '30px',
+  position: 'absolute',
+  right: '27%',
+  zIndex: '-1',
 }));
 const NaviconbuttonBox = styled(Box)(({ theme }) => ({
-  [theme.breakpoints.down("sm")]: {
-    display: "none",
+  [theme.breakpoints.down('sm')]: {
+    display: 'none',
   },
-  [theme.breakpoints.up("sm")]: {
-    display: "block",
+  [theme.breakpoints.up('sm')]: {
+    display: 'block',
   },
-  backgroundColor: "black",
-  padding: "12px 35px",
-  border: "1px solid black",
-  borderRadius: "30px",
+  backgroundColor: 'black',
+  padding: '12px 35px',
+  border: '1px solid black',
+  borderRadius: '30px',
 }));
 const MainBox = styled(Box)(({ theme }) => ({
-  display: "flex",
+  display: 'flex',
 }));
 const DrawerMainBox = styled(Box)(({ theme }) => ({
-  textAlign: "center",
+  textAlign: 'center',
 }));
 const DrawerTypoh6 = styled(Typography)(({ theme }) => ({
   my: 2,
 }));
 const DrawerListItemButton = styled(ListItemButton)(({ theme }) => ({
-  textAlign: "center",
+  textAlign: 'center',
 }));
 const MainIconButton = styled(IconButton)(({ theme }) => ({
-  marginRight: theme.spacing(2), // Correct usage of marginRight
+  marginRight: theme.spacing(2),
   [theme.breakpoints.down('sm')]: {
     display: 'none',
   },
 }));
 
 const ButtonIconImage = styled(Image)(({ theme }) => ({
-  marginLeft: "5px",
+  marginLeft: '5px',
 }));
 const AppBarMain = styled(AppBar)(({ theme }) => ({
-  backgroundColor: "#932889",
-  position: "absolute",
-  top: "30px",
-  padding: "10px 0px",
+  backgroundColor: '#932889',
+  position: 'absolute',
+  top: '30px',
+  padding: '10px 0px',
 }));
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window?: () => Window;
 }
 
 const drawerWidth = 240;
-const navItems = ["Home", "Services", "Career", "Blog", "About Us"];
-const navButtonIcon = [
-  { text: "contact us", icon: "/contact-us.png" },
-  { text: "let's talk", icon: "/Lets talk.png" },
-];
 
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
@@ -115,6 +106,20 @@ export default function DrawerAppBar(props: Props) {
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  const t = useTranslations('Navigation');
+
+  const navItems = [
+    t('home'),
+    t('services'),
+    t('career'),
+    t('blog'),
+    t('aboutUs'),
+  ];
+  const navButtonIcon = [
+    { text: t('contactUs'), icon: '/contact-us.png' },
+    { text: t('letsTalk'), icon: '/Lets talk.png' },
+  ];
 
   const drawer = (
     <DrawerMainBox onClick={handleDrawerToggle}>
@@ -141,10 +146,10 @@ export default function DrawerAppBar(props: Props) {
       <AppBar
         component="nav"
         sx={{
-          backgroundColor: "#932889",
-          position: "absolute",
-          top: "30px",
-          padding: "10px 0px",
+          backgroundColor: '#932889',
+          position: 'absolute',
+          top: '30px',
+          padding: '10px 0px',
         }}
       >
         <Toolbar>
@@ -153,14 +158,14 @@ export default function DrawerAppBar(props: Props) {
             aria-label="open drawer"
             edge="start"
             onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: "none" } }}
+            sx={{ mr: 2, display: { sm: 'none' } }}
           >
             <MenuIcon />
           </IconButton>
           <Typography
             variant="h6"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             {/* MUI */}
           </Typography>
@@ -170,15 +175,8 @@ export default function DrawerAppBar(props: Props) {
             ))}
           </NavlinksBox>
           <NaviconbuttonBox>
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Box sx={{ display: "flex" }}>
-                <Image
-                  src="/lang-icon.png"
-                  alt="language-icon"
-                  height={30}
-                  width={35}
-                />
-              </Box>
+            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+              <LocaleSwitcher />
               <Box>
                 {navButtonIcon.map((item, index) => (
                   <NavIconButton key={index} variant="outlined" size="small">
@@ -206,9 +204,9 @@ export default function DrawerAppBar(props: Props) {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
-            "& .MuiDrawer-paper": {
-              boxSizing: "border-box",
+            display: { xs: 'block', sm: 'none' },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box',
               width: drawerWidth,
             },
           }}

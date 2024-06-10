@@ -1,6 +1,7 @@
 "use client";
 import { Box, Button, styled, Typography } from "@mui/material";
 import React, { FC } from "react";
+import { useTranslations } from 'next-intl';
 
 const MainBox = styled(Box)(({ theme }) => ({
   backgroundImage: `url("/Mask group.png")`,
@@ -44,6 +45,7 @@ const HeroButtonBox = styled(Box)(({ theme }) => ({
   textAlign: "right",
   padding: "10px 24px",
 }));
+
 const HeroButton = styled(Button)(({ theme }) => ({
   border: "1px solid white",
   borderRadius: "20px",
@@ -57,21 +59,20 @@ export interface HeroProps {
 }
 
 const Hero: FC<HeroProps> = (props) => {
+  const t = useTranslations('hero');
+
   return (
     <>
       <MainBox>
         <HeroText>
           <HeroTypoH1 variant="h1" color="initial" gutterBottom>
-            360&deg; Digital Marketing Agency In UAE
+            {t('title')}
           </HeroTypoH1>
           <HeroTypobody2 variant="body2" color="initial" gutterBottom>
-            Lead Thoughts is a Performance-based digital marketing agency in UAE
-            that delivers practical solutions with the guaranteed SEO, Web
-            Development, PPC, SEM, and Social Media services. We look to provide
-            you with the best digital results on all the platforms
+            {t('description')}
           </HeroTypobody2>
-          <HeroButtonBox >
-            <HeroButton>Get Started</HeroButton>
+          <HeroButtonBox>
+            <HeroButton>{t('button')}</HeroButton>
           </HeroButtonBox>
         </HeroText>
       </MainBox>

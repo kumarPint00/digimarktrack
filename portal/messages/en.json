@@ -1,0 +1,209 @@
+{
+  "IndexPage": {
+    "title": "Welcome to our application!",
+    "subtitle": "Join us and stay connected",
+    "form": {
+      "title": "Send your message",
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Send"
+    },
+    "formSuccess": "Your message has been sent successfully",
+    "formError": "An error occurred while sending your message",
+    "formValidation": {
+      "name": "Name is required",
+      "email": "Email is required",
+      "subject": "Subject is required",
+      "message": "Message is required",
+      "submit": "Message must be sent"
+    },
+    "formSubmit": "Send"
+  },
+
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "career": "Career",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "letsTalk": "Let's Talk"
+  },
+  "about": {
+    "title": "About Us",
+    "content": "Welcome to our application!"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "hero": {
+    "title": "360° Digital Marketing Agency In UAE",
+    "description": "Lead Thoughts is a Performance-based digital marketing agency in UAE that delivers practical solutions with guaranteed SEO, Web Development, PPC, SEM, and Social Media services. We look to provide you with the best digital results on all the platforms.",
+    "button": "Get Started"
+  },
+  "aboutUs": {
+    "heading": "About us",
+    "subheading": "We Want to give you The Best Service",
+    "description": "We are 100+ professional software engineers with more than 10 years of experience in delivering superior products. Believe it because you've seen it. Here are real numbers.",
+    "iconText1": "We Can Save Your Money",
+    "iconText2": "Promise Specific Timeline Guarantee",
+    "checkText1": "Production Or Trading Of Good",
+    "checkText2": "100% Better Results",
+    "contactText": "(0000) 54 7556\nHave any Question?",
+    "experienceText": "5+ Years of Working Experience"
+  },
+  "services": {
+    "heading": "Our Best Services",
+    "subheading": "We Provide Best Services",
+    "linkText": "Want to See our Professional Services. Click here to View More"
+  },
+  "slider": {
+    "cards": [
+      {
+        "title": "Web Design & Development",
+        "para": "We build websites that add value to the business. Our website designs are made to convert potential customers into prospects and then into real customers."
+      },
+      {
+        "title": "Mobile App Development (iOS and Android)",
+        "para": "Designs & graphics are the best medium to showcase the brand or company. We build brands from scratch, starting from logo designing to advert designing and more."
+      },
+      {
+        "title": "Digital Marketing & Strategy",
+        "para": "We are a performance-driven digital agency. We create and develop digital marketing strategies and campaigns that include various digital strategies and branding, social, e-commerce & more."
+      }
+    ]
+  },
+  "whyChooseUs": {
+    "numberArray": [
+      { "number": "12k", "text": "projects done" },
+      { "number": "35k", "text": "team members" },
+      { "number": "15k", "text": "happy clients" },
+      { "number": "12+", "text": "awards" }
+    ],
+    "pointsArray": [
+      {
+        "title": "High Standard",
+        "text": "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs. It can also mean to be about your grind."
+      },
+      {
+        "title": "Focus On People",
+        "text": "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs. It can also mean to be about your grind."
+      },
+      {
+        "title": "Different Thinking",
+        "text": "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs. It can also mean to be about your grind."
+      },
+      {
+        "title": "Expert Team",
+        "text": "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs. It can also mean to be about your grind."
+      }
+    ],
+    "heading": "Why Choose Us",
+    "subheading": "Unlock Revenue Growth For Your Business",
+    "bodyText": "We are 100+ professional software engineers with more than 10 years of experience in delivering superior projects. Believe it because you've seen it."
+  },
+ 
+  "testimonials": {
+    "heading": {
+      "ourTestimonials": "Our Testimonials",
+      "whatOurClientSays": "What Our Client Says"
+    },
+    "cards": [
+      {
+        "image": "/portal/public/test1.png",
+        "text": "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
+        "name": "William"
+      },
+      {
+        "image": "/portal/public/test2.png",
+        "text": "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
+        "name": "Charlotte"
+      },
+      {
+        "image": "/portal/public/test3.png",
+        "text": "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
+        "name": "Alexander"
+      },
+      {
+        "image": "/portal/public/test4.png",
+        "text": "I was impressed by their commitment to going the extra mile. They've helped us stay ahead of the curve in our industry",
+        "name": "Brooklyn"
+      }
+    ]
+  },
+  "blogNews": {
+    "heading": "Blog & News",
+    "subheading": "Get More Update For Blog & News",
+    "months": {
+      "january": "January",
+      "february": "February",
+      "march": "March",
+      "april": "April",
+      "may": "May",
+      "june": "June",
+      "july": "July",
+      "august": "August",
+      "september": "September",
+      "october": "October",
+      "november": "November",
+      "december": "December"
+    }
+  },
+  "BlogCard": [
+    {
+      "sn": "01",
+      "month": "May",
+      "year": "2024",
+      "title": "How To Organize Files At A Design Digital Agency",
+      "text": "Store the Work in the Cloud. Pay Attention to File Naming Conventions Decide on Organizational Structure, Tagging."
+    },
+    {
+      "sn": "02",
+      "month": "May",
+      "year": "2024",
+      "title": "Social Media Marketing Strategies To Small Business",
+      "text": "Store the Work in the Cloud. Pay Attention to File Naming Conventions Decide on Organizational Structure, Tagging."
+    }
+  ],
+  "newsletter": {
+    "heading": "Subscribe To Our Newsletter!",
+    "subheading": "We are 100 professional software engineers with more than 10 years in delivering super products because you've seen it",
+    "buttonText": "Subscribe Now"
+  },
+  "footer": {
+    "description": "We are 100+ professional software engineers with more than 10 years of experience in delivering superior products. Believe it because you've seen it.",
+    "linksHeading": "Links",
+    "ourOfficesHeading": "Our Offices",
+    "copywriteText": [
+      "© 2024 Your Company. All rights reserved.",
+      "Privacy Policy",
+      "Terms of Service"
+    ],
+    "listOne": [
+      { "text": "home" },
+      { "text": "news & blog" },
+      { "text": "about us" },
+      { "text": "contact us" }
+    ],
+    "listTwo": [
+      { "text": "faq" },
+      { "text": "services" },
+      { "text": "team" },
+      { "text": "career" }
+    ],
+    "address": [
+      "United Arab Emirates",
+      "Tamani Arts offices, 5th floor office no 554, Business Bay, Dubai."
+    ],
+    "addressIconText": [
+      { "text": "+971 52 214 2913" },
+      { "text": "(04) 834 3814" },
+      { "text": "info@trackers.ae" }
+    ]
+  }
+}

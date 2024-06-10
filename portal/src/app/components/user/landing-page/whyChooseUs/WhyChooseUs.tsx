@@ -1,47 +1,12 @@
 "use client";
-import {
-  Box,
-  styled,
-  Grid,
-  Container,
-  Typography,
-  Button,
-} from "@mui/material";
+import { Box, styled, Grid, Container, Typography, Button } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import NumberCounter from "../../utils/NumberCounter";
+import { useTranslations } from 'next-intl';
 import CheckIcon from "../../../../../../public/whychooseus2.png";
 import whyChooseUSImage from "../../../../../../public/whychooseus1.png";
-import NumberCounter from "../../utils/NumberCounter";
-
-const NumberArray = [
-  { number: "12k", text: "project done" },
-  { number: "35k", text: "team members" },
-  { number: "15k", text: "happy clients" },
-  { number: "12+", text: "awards" },
-];
-
-const PointsArray = [
-  {
-    icon: CheckIcon,
-    title: "High Standard",
-    text: "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs It can also mean to be about your grind",
-  },
-  {
-    icon: CheckIcon,
-    title: "Focus On People",
-    text: "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs, It can also mean to be about your grind",
-  },
-  {
-    icon: CheckIcon,
-    title: "Different Thinking",
-    text: "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs, It can also mean to be about your grind",
-  },
-  {
-    icon: CheckIcon,
-    title: "Expert Team",
-    text: "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs, It can also mean to be about your grind",
-  },
-];
+import i18next from "i18next";
 
 const TopBox = styled(Box)(({ theme }) => ({
   borderRadius: "84px 88px 0px 0px",
@@ -52,16 +17,17 @@ const TopBox = styled(Box)(({ theme }) => ({
     height: "23rem",
   },
 }));
+
 const TypoH2 = styled(Typography)(({ theme }) => ({
   fontWeight: 600,
   color: "#ffffffa3",
   fontFamily: "sans-serif",
   display: "flex",
 }));
+
 const TypoH6 = styled(Typography)(({ theme }) => ({
   color: "white",
   textTransform: "capitalize",
-  // fontFamily: "cursive",
 }));
 
 const TypoWCUh5 = styled(Typography)(({ theme }) => ({
@@ -70,24 +36,23 @@ const TypoWCUh5 = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   padding: "5px",
   borderRadius: "25px",
-  // fontFamily: "cursive",
   fontWeight: 500,
   [theme.breakpoints.down("sm")]: {
     width: "100%",
   },
 }));
+
 const TypoWCUh3 = styled(Typography)(({ theme }) => ({
   padding: "1.5rem 0rem",
-  // fontFamily: "cursive",
   color: "white",
   [theme.breakpoints.down("sm")]: {
     textAlign: "center",
     fontSize: "2.5rem",
   },
 }));
+
 const TypoWCUBody1 = styled(Typography)(({ theme }) => ({
   color: "white",
-  // fontFamily: "cursive",
   fontSize: "1.2rem",
   paddingBottom: "1.5rem",
   textAlign: "justify",
@@ -96,17 +61,17 @@ const TypoWCUBody1 = styled(Typography)(({ theme }) => ({
     paddingRight: "0rem",
   },
 }));
+
 const PointsBody2 = styled(Typography)(({ theme }) => ({
   color: "white",
-  // fontFamily: "cursive",
   textAlign: "justify",
   marginBottom: "0.5rem",
-  fontsize: "0.79rem",
+  fontSize: "0.79rem",
 }));
+
 const PointsTitleTypography = styled(Typography)(({ theme }) => ({
   color: "white",
   textTransform: "capitalize",
-  // fontFamily: "cursive",
   fontSize: "1.8rem",
   padding: "0px",
   marginBottom: "0.7rem",
@@ -125,16 +90,20 @@ const BottomBox = styled(Box)(({ theme }) => ({
     paddingBottom: "90px",
   },
 }));
+
 const CheckIconBox = styled(Box)(({ theme }) => ({
   display: "flex",
   columnGap: "15px",
 }));
+
 const HeadingParaBox = styled(Box)(({ theme }) => ({
   height: "460px",
 }));
+
 const PoinIconBox = styled(Box)(({ theme }) => ({
   paddingTop: "5px",
 }));
+
 const ImageBox = styled(Box)(({ theme }) => ({
   height: "460px",
   display: "flex",
@@ -145,6 +114,7 @@ const ImageBox = styled(Box)(({ theme }) => ({
     justifyContent: "center",
   },
 }));
+
 const ViewAllBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     display: "flex",
@@ -152,17 +122,21 @@ const ViewAllBox = styled(Box)(({ theme }) => ({
     alignItems: "center",
   },
 }));
+
 const NumberCounterBox = styled(Box)(({ theme }) => ({
   textAlign: "center",
 }));
+
 const PointsBox = styled(Box)(({ theme }) => ({
   height: "460px",
 }));
+
 const NumberGrid = styled(Grid)(({ theme }) => ({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
 }));
+
 const MainImage = styled(Image)(({ theme }) => ({
   width: "100%",
   height: "80%",
@@ -171,9 +145,9 @@ const MainImage = styled(Image)(({ theme }) => ({
     height: "100%",
   },
 }));
+
 const ButtonWCU = styled(Button)(({ theme }) => ({
   color: "white",
-  // fontFamily: "cursive",
   textTransform: "capitalize",
   border: "1px solid #ffffff94",
   padding: "5px 25px",
@@ -184,26 +158,53 @@ const ButtonWCU = styled(Button)(({ theme }) => ({
 }));
 
 const WhyChooseUs = () => {
+  const t = useTranslations('whyChooseUs');
+
   return (
     <>
       <TopBox>
         <Container maxWidth="lg">
           <Grid container spacing={4}>
-            {NumberArray.map((item, index) => (
-              <NumberGrid key={index} item xs={6} sm={3} md={3} lg={3} xl={3}>
-                <NumberCounterBox>
-                  <TypoH2 variant="h2" color="initial">
-                    <NumberCounter
-                      number={Number(item.number.replace(/[^\d.-]/g, ""))}
-                    />
-                    {item.number.replace(/[0-9]/g, "")}
-                  </TypoH2>
-                  <TypoH6 variant="h6" color="initial">
-                    {item.text}
-                  </TypoH6>
-                </NumberCounterBox>
-              </NumberGrid>
-            ))}
+            <NumberGrid item xs={6} sm={3} md={3} lg={3} xl={3}>
+              <NumberCounterBox>
+                <TypoH2 variant="h2" color="initial">
+                  <NumberCounter number={12000} />k
+                </TypoH2>
+                <TypoH6 variant="h6" color="initial">
+                  {t('numberArray.0.text')}
+                </TypoH6>
+              </NumberCounterBox>
+            </NumberGrid>
+            <NumberGrid item xs={6} sm={3} md={3} lg={3} xl={3}>
+              <NumberCounterBox>
+                <TypoH2 variant="h2" color="initial">
+                  <NumberCounter number={35000} />k
+                </TypoH2>
+                <TypoH6 variant="h6" color="initial">
+                  {t('numberArray.1.text')}
+                </TypoH6>
+              </NumberCounterBox>
+            </NumberGrid>
+            <NumberGrid item xs={6} sm={3} md={3} lg={3} xl={3}>
+              <NumberCounterBox>
+                <TypoH2 variant="h2" color="initial">
+                  <NumberCounter number={15000} />k
+                </TypoH2>
+                <TypoH6 variant="h6" color="initial">
+                  {t('numberArray.2.text')}
+                </TypoH6>
+              </NumberCounterBox>
+            </NumberGrid>
+            <NumberGrid item xs={6} sm={3} md={3} lg={3} xl={3}>
+              <NumberCounterBox>
+                <TypoH2 variant="h2" color="initial">
+                  <NumberCounter number={12} />+
+                </TypoH2>
+                <TypoH6 variant="h6" color="initial">
+                  {t('numberArray.3.text')}
+                </TypoH6>
+              </NumberCounterBox>
+            </NumberGrid>
           </Grid>
         </Container>
       </TopBox>
@@ -213,18 +214,16 @@ const WhyChooseUs = () => {
             <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
               <HeadingParaBox>
                 <TypoWCUh5 variant="h5" color="initial">
-                  Why Choose Us
+                  {t('heading')}
                 </TypoWCUh5>
                 <TypoWCUh3 variant="h3" color="initial">
-                  Unlock Revenue Growth For Your Business
+                  {t('subheading')}
                 </TypoWCUh3>
                 <TypoWCUBody1 variant="subtitle1" color="initial">
-                  We are 100+ professional software engineers with mor than 10
-                  years of experience in delivering sup erior pro Believe it
-                  because you&apos;ve seen it.
+                  {t('bodyText')}
                 </TypoWCUBody1>
                 <ViewAllBox>
-                  <ButtonWCU variant="outlined">view all more</ButtonWCU>
+                  <ButtonWCU variant="outlined">View All</ButtonWCU>
                 </ViewAllBox>
               </HeadingParaBox>
             </Grid>
@@ -235,26 +234,58 @@ const WhyChooseUs = () => {
             </Grid>
             <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>
               <PointsBox>
-                {PointsArray.map((item, index) => (
-                  <CheckIconBox key={index}>
-                    <PoinIconBox>
-                      <Image
-                        src={item.icon}
-                        alt="image"
-                        height={25}
-                        width={25}
-                      />
-                    </PoinIconBox>
-                    <Box>
-                      <PointsTitleTypography variant="h4" color="initial">
-                        {item.title}
-                      </PointsTitleTypography>
-                      <PointsBody2 variant="body2" color="initial">
-                        {item.text}
-                      </PointsBody2>
-                    </Box>
-                  </CheckIconBox>
-                ))}
+                <CheckIconBox>
+                  <PoinIconBox>
+                    <Image src={CheckIcon} alt="image" height={25} width={25} />
+                  </PoinIconBox>
+                  <Box>
+                    <PointsTitleTypography variant="h4" color="initial">
+                      {t('pointsArray.0.title')}
+                    </PointsTitleTypography>
+                    <PointsBody2 variant="body2" color="initial">
+                      {t('pointsArray.0.text')}
+                    </PointsBody2>
+                  </Box>
+                </CheckIconBox>
+                <CheckIconBox>
+                  <PoinIconBox>
+                    <Image src={CheckIcon} alt="image" height={25} width={25} />
+                  </PoinIconBox>
+                  <Box>
+                    <PointsTitleTypography variant="h4" color="initial">
+                      {t('pointsArray.1.title')}
+                    </PointsTitleTypography>
+                    <PointsBody2 variant="body2" color="initial">
+                      {t('pointsArray.1.text')}
+                    </PointsBody2>
+                  </Box>
+                </CheckIconBox>
+                <CheckIconBox>
+                  <PoinIconBox>
+                    <Image src={CheckIcon} alt="image" height={25} width={25} />
+                  </PoinIconBox>
+                  <Box>
+                    <PointsTitleTypography variant="h4" color="initial">
+                      {t('pointsArray.2.title')}
+                    </PointsTitleTypography>
+                    <PointsBody2 variant="body2" color="initial">
+                      {t('pointsArray.2.text')}
+                    </PointsBody2>
+                  </Box>
+                </CheckIconBox>
+                <CheckIconBox>
+                  <PoinIconBox>
+                    <Image src={CheckIcon} alt="image" height={25} width={25} />
+                  </PoinIconBox>
+                  <Box>
+                    <PointsTitleTypography variant="h4" color="initial">
+                      {t('pointsArray.3.title')}
+                    </PointsTitleTypography>
+                    <PointsBody2 variant="body2" color="initial">
+                      {t('pointsArray.3.text')}
+                    </PointsBody2>
+                  </Box>
+                </CheckIconBox>
               </PointsBox>
             </Grid>
           </Grid>

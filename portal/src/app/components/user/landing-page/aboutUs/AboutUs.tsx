@@ -1,9 +1,11 @@
+"use client";
 import { Container, Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import Imagegrid1 from "../../../../../../public/Rectangle 9.png";
 import Imagegrid2 from "../../../../../../public/Rectangle 7.png";
 import ImageGrid3 from "../../../../../../public/imageGrid.png";
+import { useTranslations } from 'next-intl';
 import {
   AboutUsBox,
   CheckIconBox,
@@ -19,6 +21,8 @@ import {
 } from "./styled";
 
 const AboutUs = () => {
+  const t = useTranslations('aboutUs');
+
   return (
     <>
       <MainBox>
@@ -27,15 +31,13 @@ const AboutUs = () => {
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <AboutUsBox>
                 <Typographyh5 variant="h5" color="initial" gutterBottom>
-                  About us
+                  {t('heading')}
                 </Typographyh5>
                 <Typographyh3 variant="h3" color="initial" gutterBottom>
-                  We Want to give you The Best Service
+                  {t('subheading')}
                 </Typographyh3>
                 <Typographybody2 variant="body2" color="initial" gutterBottom>
-                  We are 100+ professional software engineers with more than 10
-                  years of experience in delivering superior products Believe it
-                  because you&apos;ve seen it. Here are real numbers
+                  {t('description')}
                 </Typographybody2>
                 <IconGrid container spacing={3}>
                   <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
@@ -57,7 +59,7 @@ const AboutUs = () => {
                         color="initial"
                         gutterBottom
                       >
-                        We Can Save Your Money
+                        {t('iconText1')}
                       </IconTypography>
                     </IconBox>
                   </Grid>
@@ -80,7 +82,7 @@ const AboutUs = () => {
                         color="initial"
                         gutterBottom
                       >
-                        Promiss Specific Timeline Guarantee
+                        {t('iconText2')}
                       </IconTypography>
                     </IconBox>
                   </Grid>
@@ -97,7 +99,7 @@ const AboutUs = () => {
                         color="initial"
                         gutterBottom
                       >
-                        Production Or Trading Of Good
+                        {t('checkText1')}
                       </CheckIconTypography>
                     </CheckIconBox>
                     <CheckIconBox>
@@ -112,7 +114,7 @@ const AboutUs = () => {
                         color="initial"
                         gutterBottom
                       >
-                        100% Better Results
+                        {t('checkText2')}
                       </CheckIconTypography>
                     </CheckIconBox>
                   </Grid>
@@ -135,17 +137,12 @@ const AboutUs = () => {
                         color="initial"
                         gutterBottom
                       >
-                        (0000) 54 7556
-                        <br />
-                        <span
-                          style={{
-                            fontSize: "small",
-                            fontWeight: 500,
-                            color: "#6907a8",
-                          }}
-                        >
-                          Have any Question?
-                        </span>
+                        {t('contactText').split('\n').map((line, index) => (
+                          <React.Fragment key={index}>
+                            {line}
+                            <br />
+                          </React.Fragment>
+                        ))}
                       </IconTypography>
                     </IconBox>
                   </Grid>
@@ -156,7 +153,7 @@ const AboutUs = () => {
               <Grid container spacing={1}>
                 <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                   <ExpTypography variant="body1" color="initial" gutterBottom>
-                    5+ Years of Working Experience
+                    {t('experienceText')}
                   </ExpTypography>
                   <Image
                     src={Imagegrid1}

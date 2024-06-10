@@ -1,10 +1,5 @@
-import React from "react";
-import LandingPage from "./components/user/landing-page/page";
+import { redirect } from 'next/navigation';
 
-export default function Home() {
-  return (
-    <>
-      <LandingPage />
-    </>
-  );
+export default function RootPage() {
+  redirect('/en');
 }
