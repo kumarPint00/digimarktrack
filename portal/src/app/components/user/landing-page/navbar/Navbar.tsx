@@ -14,9 +14,11 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Image from "next/image";
 import Logo from "../../../../../../public/footer logo 360.webp";
+import DrawerLogo from "../../../../../../public/drawerlogowebp.webp";
 import {
   ButtonIconImage,
   DrawerListItemButton,
+  DrawerLogoBox,
   DrawerMainBox,
   DrawerTypoh6,
   MainBox,
@@ -26,7 +28,8 @@ import {
   NavlinksButton,
   drawerWidth,
 } from "./styled";
-import { navButtonIcon, navItems } from "./data";
+import { navButtonIcon, navItems, navLinks } from "./data";
+import Link from "next/link";
 
 interface Props {
   /**
@@ -46,15 +49,19 @@ export default function DrawerAppBar(props: Props) {
 
   const drawer = (
     <DrawerMainBox onClick={handleDrawerToggle}>
-      <DrawerTypoh6 variant="h6">MUI</DrawerTypoh6>
+      <DrawerLogoBox>
+        <Image alt="logo" src={DrawerLogo} height={50} width={100} />
+      </DrawerLogoBox>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <DrawerListItemButton>
-              <ListItemText primary={item} />
-            </DrawerListItemButton>
-          </ListItem>
+          <Link key={item} href={navLinks[item]} style={{textDecoration:"none"}}>
+            <ListItem  sx={{color:"black", fontSize:"1.2rem", fontWeight:"550"}} disablePadding>
+              <DrawerListItemButton>
+                <ListItemText primary={item}  />
+              </DrawerListItemButton>
+            </ListItem>
+          </Link>
         ))}
       </List>
     </DrawerMainBox>
@@ -99,7 +106,9 @@ export default function DrawerAppBar(props: Props) {
           </Typography>
           <NavlinksBox>
             {navItems.map((item) => (
-              <NavlinksButton key={item}>{item}</NavlinksButton>
+              <Link key={item} href={navLinks[item]}>
+                <NavlinksButton>{item}</NavlinksButton>
+              </Link>
             ))}
           </NavlinksBox>
           <NaviconbuttonBox>

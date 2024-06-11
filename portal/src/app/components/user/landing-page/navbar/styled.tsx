@@ -33,7 +33,7 @@ export const NavlinksBox = styled(Box)(({ theme }) => ({
   borderRadius: "30px",
   position: "absolute",
   right: "27%",
-  zIndex: "-1",
+  zIndex: "0",
 }));
 export const NaviconbuttonBox = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
@@ -46,12 +46,16 @@ export const NaviconbuttonBox = styled(Box)(({ theme }) => ({
   padding: "12px 35px",
   border: "1px solid black",
   borderRadius: "30px",
+  zIndex:"1"
 }));
 export const MainBox = styled(Box)(({ theme }) => ({
   display: "flex",
 }));
 export const DrawerMainBox = styled(Box)(({ theme }) => ({
   textAlign: "center",
+}));
+export const DrawerLogoBox = styled(Box)(({ theme }) => ({
+  padding:"5px 0px"
 }));
 export const DrawerTypoh6 = styled(Typography)(({ theme }) => ({
   my: 2,

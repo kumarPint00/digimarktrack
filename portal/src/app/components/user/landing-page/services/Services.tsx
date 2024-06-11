@@ -11,7 +11,6 @@ import {
 } from "./styled";
 
 const Services = () => {
-  console.log("Services")
   return (
     <>
       <MainBox>
