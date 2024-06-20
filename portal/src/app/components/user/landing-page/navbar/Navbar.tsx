@@ -28,7 +28,7 @@ import {
   NavlinksButton,
   drawerWidth,
 } from "./styled";
-import { navButtonIcon, navItems, navLinks } from "./data";
+import { ServiceMenu, navButtonIcon, navItems, navLinks } from "./data";
 import Link from "next/link";
 
 interface Props {
@@ -104,12 +104,14 @@ export default function DrawerAppBar(props: Props) {
           >
             <Image alt="logo" src={Logo} height={50} width={100} />
           </Typography>
+          
           <NavlinksBox>
-            {navItems.map((item) => (
+          <ServiceMenu />
+            {/* {navItems.map((item) => (
               <Link key={item} href={navLinks[item]}>
                 <NavlinksButton>{item}</NavlinksButton>
               </Link>
-            ))}
+            ))} */}
           </NavlinksBox>
           <NaviconbuttonBox>
             <Box sx={{ display: "flex", alignItems: "center" }}>

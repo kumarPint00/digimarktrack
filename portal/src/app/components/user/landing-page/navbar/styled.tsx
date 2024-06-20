@@ -1,5 +1,12 @@
 "use client";
-import { Box, Button, ListItemButton, Typography, styled } from "@mui/material";
+import {
+  Box,
+  Button,
+  ListItemButton,
+  MenuItem,
+  Typography,
+  styled,
+} from "@mui/material";
 import Image from "next/image";
 
 export const NavlinksButton = styled(Button)(({ theme }) => ({
@@ -46,7 +53,7 @@ export const NaviconbuttonBox = styled(Box)(({ theme }) => ({
   padding: "12px 35px",
   border: "1px solid black",
   borderRadius: "30px",
-  zIndex:"1"
+  zIndex: "1",
 }));
 export const MainBox = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -55,7 +62,7 @@ export const DrawerMainBox = styled(Box)(({ theme }) => ({
   textAlign: "center",
 }));
 export const DrawerLogoBox = styled(Box)(({ theme }) => ({
-  padding:"5px 0px"
+  padding: "5px 0px",
 }));
 export const DrawerTypoh6 = styled(Typography)(({ theme }) => ({
   my: 2,
@@ -66,6 +73,17 @@ export const DrawerListItemButton = styled(ListItemButton)(({ theme }) => ({
 
 export const ButtonIconImage = styled(Image)(({ theme }) => ({
   marginLeft: "5px",
+}));
+export const CustomMenuItem = styled(MenuItem)(({ theme }) => ({
+  color: "black",
+  textTransform: "capitalize",
+  display: "flex",
+  justifyContent: "center",
+  fontSize: "13px",
+  "&:hover": {
+    color:"white",
+    backgroundColor:"black"
+  },
 }));
 
 export const drawerWidth = 240;
