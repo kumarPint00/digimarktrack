@@ -66,8 +66,10 @@ export const ExpTypography = styled(Typography)(({ theme }) => ({
   writingMode: "vertical-lr",
   borderRadius: "25px",
   position: "absolute",
-  right: "40rem",
-  top: "40.4rem",
+  right: "auto",
+  top: "6px",
+  bottom: "0",
+  left: "0",
   height: "215px",
   border: "3px solid white",
   [theme.breakpoints.down("sm")]: {
