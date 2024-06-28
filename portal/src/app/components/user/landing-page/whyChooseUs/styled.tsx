@@ -28,7 +28,7 @@ export const TopBox = styled(Box)(({ theme }) => ({
     textAlign: "center",
     padding: "5px",
     borderRadius: "25px",
-    fontWeight: 500,
+    fontFamily: "Righteous,sans-serif",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
     },
@@ -36,6 +36,7 @@ export const TopBox = styled(Box)(({ theme }) => ({
   export const TypoWCUh3 = styled(Typography)(({ theme }) => ({
     padding: "1.5rem 0rem",
     color: "white",
+    fontFamily: "Righteous,sans-serif",
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
       fontSize: "2.5rem",
@@ -60,9 +61,10 @@ export const TopBox = styled(Box)(({ theme }) => ({
   export const PointsTitleTypography = styled(Typography)(({ theme }) => ({
     color: "white",
     textTransform: "capitalize",
-    fontSize: "1.8rem",
+    fontSize: "1.7rem",
     padding: "0px",
     marginBottom: "0.7rem",
+    fontFamily: "Righteous,sans-serif",
   }));
   
   export const BottomBox = styled(Box)(({ theme }) => ({

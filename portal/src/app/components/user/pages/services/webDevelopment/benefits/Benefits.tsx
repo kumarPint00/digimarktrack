@@ -7,13 +7,15 @@ const Benefits = () => {
   return (
     <>
       <MainBox>
-        <Container maxWidth="lg">
+        <Container maxWidth="xl">
           <HeadTypo variant="h4" gutterBottom>
             Benefits of Using Websites
           </HeadTypo>
           {textData.map((item, index) => (
             <SubTittleTypo key={index} variant="subtitle1" gutterBottom>
-              <span style={{ fontWeight: "bold" }}>{item.boldtext}</span>{" "}
+              <span style={{ fontFamily: "Righteous, sans-serif" }}>
+                {item.boldtext}
+              </span>{" "}
               {item.text}
             </SubTittleTypo>
           ))}

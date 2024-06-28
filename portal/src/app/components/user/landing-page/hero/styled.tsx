@@ -14,10 +14,10 @@ export const MainBox = styled(Box)(({ theme }) => ({
   }));
   
   export const HeroText = styled(Box)(({ theme }) => ({
-    width: "500px",
+    width: "575px",
     position: "absolute",
     right: "50px",
-    bottom: "50px",
+    bottom: "100px",
     [theme.breakpoints.down('sm')]: {
       width: "357px",
       right: "9px",
@@ -26,9 +26,10 @@ export const MainBox = styled(Box)(({ theme }) => ({
   }));
   
   export const HeroTypoH1 = styled(Typography)(({ theme }) => ({
-    fontSize: "3rem",
+    fontSize: "2.688rem",
     textAlign: "center",
     color: "white",
+    fontFamily:"Zen Dots, sans-serif",
   }));
   
   export const HeroTypobody2 = styled(Typography)(({ theme }) => ({

@@ -23,12 +23,14 @@ export const MainBox = styled(Box)(({ theme }) => ({
     textAlign: "center",
     width: "300px",
     borderRadius: "25px",
+    fontFamily:"Righteous, sans-serif",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
     },
   }));
   
   export const Typographyh3 = styled(Typography)(({ theme }) => ({
+    fontFamily:"Righteous, sans-serif",
     [theme.breakpoints.down("sm")]: {
       fontSize: "2.5rem",
       textAlign: "center",
@@ -57,10 +59,11 @@ export const MainBox = styled(Box)(({ theme }) => ({
   export const CustomTitleTypography = styled(({ index, ...other }: any) => (
     <Typography {...other} />
   ))(({ theme, index }) => ({
-    fontWeight: 600,
+    // fontWeight: 600,
     paddingLeft: "5rem",
     fontSize: "1.5rem",
     color: index === 0 ? "black" : "white",
+    fontFamily:"Righteous, sans-serif",
     [theme.breakpoints.down("sm")]: {
       padding: "0rem",
     },

@@ -10,12 +10,14 @@ export const Typographyh5 = styled(Typography)(({ theme }) => ({
     padding: "5px 0px",
     textAlign: "center",
     width: "300px",
+    fontFamily: "Righteous,sans-serif",
     borderRadius: "25px",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
     },
   }));
   export const Typographyh3 = styled(Typography)(({ theme }) => ({
+    fontFamily: "Righteous,sans-serif",
   }));
   export const Typographyh5Link = styled(Typography)(({ theme }) => ({
     textAlign: "center",

@@ -17,13 +17,15 @@ export const Typographyh5 = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   width: "50%",
   borderRadius: "25px",
-
+  fontSize:"1.5rem",
+  fontFamily: "Righteous,sans-serif",
   [theme.breakpoints.down("sm")]: {
     width: "100%",
   },
 }));
 export const Typographyh3 = styled(Typography)(({ theme }) => ({
   textTransform: "capitalize",
+  fontFamily: "Righteous,sans-serif",
   [theme.breakpoints.down("sm")]: {
     textAlign: "center",
   },

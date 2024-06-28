@@ -17,12 +17,14 @@ export const Typographyh5 = styled(Typography)(({ theme }) => ({
   textAlign: "center",
   width: "300px",
   borderRadius: "25px",
+  fontFamily: "Righteous,sans-serif",
   [theme.breakpoints.down("sm")]: {
     width: "100%",
   },
 }));
 
 export const Typographyh3 = styled(Typography)(({ theme }) => ({
+  fontFamily: "Righteous,sans-serif",
   [theme.breakpoints.down("sm")]: {
     fontSize: "2.5rem",
   },

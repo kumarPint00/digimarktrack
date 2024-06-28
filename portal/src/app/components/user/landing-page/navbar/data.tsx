@@ -84,13 +84,30 @@ export const ServiceMenu = () => {
         >
           <CustomMenuItem onClick={handleClose}>Web Development</CustomMenuItem>
         </Link>
-        <CustomMenuItem onClick={handleClose}>
-          Mobile Development
-        </CustomMenuItem>
-        <CustomMenuItem onClick={handleClose}>Digital Marketing</CustomMenuItem>
-        <CustomMenuItem onClick={handleClose}>
-          Social Media Marketing
-        </CustomMenuItem>
+        <Link
+          style={{ textDecoration: "none" }}
+          href="/components/user/pages/services/mobileDevelopment"
+        >
+          <CustomMenuItem onClick={handleClose}>
+            Mobile Development
+          </CustomMenuItem>
+        </Link>
+        <Link
+          style={{ textDecoration: "none" }}
+          href="/components/user/pages/services/digitalMarketing"
+        >
+          <CustomMenuItem onClick={handleClose}>
+            Digital Marketing
+          </CustomMenuItem>
+        </Link>
+        <Link
+          style={{ textDecoration: "none" }}
+          href="/components/user/pages/services/socialMediaMarketing"
+        >
+          <CustomMenuItem onClick={handleClose}>
+            Social Media Marketing
+          </CustomMenuItem>
+        </Link>
         <CustomMenuItem onClick={handleClose}>
           Reputation Management
         </CustomMenuItem>

@@ -29,7 +29,7 @@ const AboutUs = () => {
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <AboutUsBox>
-                <Typographyh5 variant="h5" color="initial" gutterBottom>
+                <Typographyh5 variant="h6" color="initial" gutterBottom>
                   About us
                 </Typographyh5>
                 <Typographyh3 variant="h3" color="initial" gutterBottom>

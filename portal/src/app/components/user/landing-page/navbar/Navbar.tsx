@@ -131,7 +131,7 @@ export default function DrawerAppBar(props: Props) {
                       src={item.icon}
                       height={20}
                       width={20}
-                      alt={item.text}
+                      alt="icons"
                     />
                   </NavIconButton>
                 ))}

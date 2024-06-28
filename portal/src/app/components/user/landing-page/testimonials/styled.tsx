@@ -35,6 +35,7 @@ export const Typographyh5 = styled(Typography)(({ theme }) => ({
   padding: "5px 0px",
   textAlign: "center",
   width: "300px",
+  fontFamily:"Righteous, sans-serif",
   borderRadius: "25px",
   textTransform: "capitalize",
   [theme.breakpoints.down("sm")]: {
@@ -45,6 +46,7 @@ export const Typographyh5 = styled(Typography)(({ theme }) => ({
 export const Typographyh3 = styled(Typography)(({ theme }) => ({
   color: "white",
   textTransform: "capitalize",
+  fontFamily:"Righteous, sans-serif",
   [theme.breakpoints.down("sm")]: {
     fontSize: "2.5rem",
     color: "black",

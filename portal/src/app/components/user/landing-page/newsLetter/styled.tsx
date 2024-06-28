@@ -45,14 +45,13 @@ export const MainBox = styled(Box)(({ theme }) => ({
   
   export const HeadText = styled(Typography)(({ theme }) => ({
     color: "white",
-    // fontFamily: "cursive",
+    fontFamily: "Righteous, sans-serif",
     marginBottom: "10px",
   }));
   export const FieldButton = styled(Button)(({ theme }) => ({
     background: "linear-gradient(90deg, #ff7122, #9901f6)",
     borderRadius: "25px",
     textTransform: "capitalize",
-    // fontFamily:"cursive"
   }));
   export const TextFieldMain = styled(TextField)(({ theme }) => ({
     background: "white",

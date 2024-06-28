@@ -6,7 +6,7 @@ import { HeadTypo, MainBox, SubTittleTypo } from "./styled";
 const OverView = () => {
   return (
     <MainBox>
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <HeadTypo variant="h4" gutterBottom>
           Web Development and Design Company
         </HeadTypo>

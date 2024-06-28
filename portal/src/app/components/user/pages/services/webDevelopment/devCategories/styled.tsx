@@ -5,7 +5,7 @@ import Image from "next/image";
 export const MainBox = styled(Box)(({ theme }) => ({
   marginTop: "2.5rem",
   backgroundColor: "#0c1f2b",
-  borderRadius:"50px 50px 0px 0px"
+  borderRadius: "50px 50px 0px 0px",
 }));
 export const IconBox = styled(Box)(({ theme }) => ({
   display: "flex",
@@ -24,11 +24,11 @@ export const Typo2 = styled(Typography)(({ theme }) => ({
 }));
 
 export const MainImage = styled(Image)(({ theme }) => ({
-    width: "500px",
-    height: "521px",
-    objectFit: "contain",
-    [theme.breakpoints.down("sm")]: {
-      height: "400px",
-      width:"350px"
-    },
-  }));
+  width: "500px",
+  height: "521px",
+  objectFit: "contain",
+  [theme.breakpoints.down("sm")]: {
+    height: "400px",
+    width: "350px",
+  },
+}));

@@ -42,7 +42,7 @@ const WorkProcess = () => {
                   </Box>
                   <Box>
                     <Typography
-                      sx={{ fontWeight: "600", color:item.color }}
+                      sx={{  color:item.color,fontFamily: "Righteous,sans-serif", }}
                       variant="h5"
                       color="initial"
                     >
@@ -89,7 +89,7 @@ const WorkProcess = () => {
                   </Box>
                   <Box>
                     <Typography
-                      sx={{ fontWeight: "600", color:item.color }}
+                      sx={{  color:item.color, fontFamily: "Righteous,sans-serif", }}
                       variant="h5"
                       color="initial"
                     >

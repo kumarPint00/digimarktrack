@@ -25,10 +25,10 @@ const BlogNews = () => {
         <Container maxWidth="lg">
           <HeadingBox>
             <Typographyh5 variant="h5" color="initial" gutterBottom>
-              Blog & News
+              Blog And News
             </Typographyh5>
             <Typographyh3 variant="h3" color="initial" gutterBottom>
-              Get More Update For Blog & News
+              Get More Update For Blog And News
             </Typographyh3>
           </HeadingBox>
           <GridBox container spacing={3}>
