@@ -2,8 +2,8 @@
 import { Box, Button, Typography, styled } from "@mui/material";
 
 export const MainBox = styled(Box)(({ theme }) => ({
-    backgroundImage: `url("/digital markeitng  banner 1 1 (1).webp")`,
-    backgroundPosition: "bottom",
+    backgroundImage: `url("/seo banner 1.webp")`,
+    backgroundPosition: "top",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     height: "100vh",

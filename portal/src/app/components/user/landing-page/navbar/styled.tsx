@@ -8,6 +8,7 @@ import {
   styled,
 } from "@mui/material";
 import Image from "next/image";
+import Link from "next/link";
 
 export const NavlinksButton = styled(Button)(({ theme }) => ({
   textTransform: "capitalize",
@@ -38,8 +39,11 @@ export const NavlinksBox = styled(Box)(({ theme }) => ({
   padding: "10px 45px",
   border: "1px solid white",
   borderRadius: "30px",
-  position: "absolute",
-  right: "27%",
+   position: 'relative',
+  right: '0px',
+  bottom: '0',
+  left: '45px',
+  top: '0',
   zIndex: "0",
 }));
 export const NaviconbuttonBox = styled(Box)(({ theme }) => ({
@@ -69,6 +73,9 @@ export const DrawerTypoh6 = styled(Typography)(({ theme }) => ({
 }));
 export const DrawerListItemButton = styled(ListItemButton)(({ theme }) => ({
   textAlign: "center",
+}));
+export const NavigationLinkTag = styled(Link)(({ theme }) => ({
+  textDecoration:"none"
 }));
 
 export const ButtonIconImage = styled(Image)(({ theme }) => ({

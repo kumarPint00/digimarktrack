@@ -16,11 +16,10 @@ export const navLinks: any = {
 
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import Link from "next/link";
-import { CustomMenuItem } from "./styled";
+import { CustomMenuItem, NavigationLinkTag } from "./styled";
 
 export const ServiceMenu = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -54,10 +53,6 @@ export const ServiceMenu = () => {
         </Link>
       </Button>
       <Button
-        id="basic-button"
-        aria-controls={open ? "basic-menu" : undefined}
-        aria-haspopup="true"
-        aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
         sx={{
@@ -78,39 +73,50 @@ export const ServiceMenu = () => {
           "aria-labelledby": "basic-button",
         }}
       >
-        <Link
-          style={{ textDecoration: "none" }}
-          href="/components/user/pages/services/webDevelopment"
-        >
+        <NavigationLinkTag href="/webDevelopment">
           <CustomMenuItem onClick={handleClose}>Web Development</CustomMenuItem>
-        </Link>
-        <Link
-          style={{ textDecoration: "none" }}
-          href="/components/user/pages/services/mobileDevelopment"
-        >
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/mobileDevelopment">
           <CustomMenuItem onClick={handleClose}>
             Mobile Development
           </CustomMenuItem>
-        </Link>
-        <Link
-          style={{ textDecoration: "none" }}
-          href="/components/user/pages/services/digitalMarketing"
-        >
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/digitalMarketing">
           <CustomMenuItem onClick={handleClose}>
             Digital Marketing
           </CustomMenuItem>
-        </Link>
-        <Link
-          style={{ textDecoration: "none" }}
-          href="/components/user/pages/services/socialMediaMarketing"
-        >
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/socialMedia">
           <CustomMenuItem onClick={handleClose}>
             Social Media Marketing
           </CustomMenuItem>
-        </Link>
-        <CustomMenuItem onClick={handleClose}>
-          Reputation Management
-        </CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/reputationManagement">
+          <CustomMenuItem onClick={handleClose}>
+            Reputation Management
+          </CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/eCommerce">
+          <CustomMenuItem onClick={handleClose}>E-Commerce</CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/seoManagement">
+          <CustomMenuItem onClick={handleClose}>SEO Management</CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/graphicDesign">
+          <CustomMenuItem onClick={handleClose}>Graphic Design</CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/softwareDevelopment">
+          <CustomMenuItem onClick={handleClose}>Software Development</CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/itConsulting">
+          <CustomMenuItem onClick={handleClose}>IT Consulting</CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/contentWriting">
+          <CustomMenuItem onClick={handleClose}>Content Writing</CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/videoProduction">
+          <CustomMenuItem onClick={handleClose}>Video Production</CustomMenuItem>
+        </NavigationLinkTag>
       </Menu>
       <Button
         id="basic-button"
@@ -118,7 +124,6 @@ export const ServiceMenu = () => {
         aria-haspopup="true"
         aria-expanded={open2 ? "true" : undefined}
         onClick={handleClick2}
-        endIcon={<KeyboardArrowDownIcon />}
         sx={{
           color: "black",
           textTransform: "capitalize",
@@ -128,26 +133,6 @@ export const ServiceMenu = () => {
       >
         Career
       </Button>
-      <Menu
-        id="basic-menu2"
-        anchorEl={anchorE2}
-        open={open2}
-        onClose={handleClose}
-        MenuListProps={{
-          "aria-labelledby": "basic-button",
-        }}
-      >
-        <Link
-          style={{ textDecoration: "none" }}
-          href="/components/user/pages/services/webDevelopment"
-        >
-          <CustomMenuItem onClick={handleClose}>Career</CustomMenuItem>
-        </Link>
-        <CustomMenuItem onClick={handleClose}>Career</CustomMenuItem>
-        <CustomMenuItem onClick={handleClose}>Career</CustomMenuItem>
-        <CustomMenuItem onClick={handleClose}>Career</CustomMenuItem>
-        <CustomMenuItem onClick={handleClose}>Career</CustomMenuItem>
-      </Menu>
     </>
   );
 };
