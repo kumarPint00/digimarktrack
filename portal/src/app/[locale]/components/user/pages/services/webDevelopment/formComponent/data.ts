@@ -1,3 +1,3 @@
-export const socialImages =["/facebook.png", "/twitter.png", "/linkedin.png", "/instagram.png"]
+export const SocialImages =["/facebook.png", "/twitter.png", "/linkedin.png", "/instagram.png"]
 
-export const textfieldData = ["Your Name","Your Email","Your Number"]
+export const TextfieldData = ["Your Name","Your Email","Your Number"]

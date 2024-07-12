@@ -10,7 +10,7 @@ import {
   Typographyh5,
 } from "./styled";
 import Image from "next/image";
-import { socialImages } from "./data";
+import { SocialImages } from "./data";
 import Form from "./Form";
 import { TranslationAtom } from "@/components/TranslationAtom";
 
@@ -36,7 +36,7 @@ const FormComponent = () => {
                     <TranslationAtom word="webDevelopment:formComponent.socialText1" />
                   </SocialTypo1>
                   <Box>
-                    {socialImages.map((item, index) => (
+                    {SocialImages.map((item, index) => (
                       <Image
                         key={index}
                         src={item}

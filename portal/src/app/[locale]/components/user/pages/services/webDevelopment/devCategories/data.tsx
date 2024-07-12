@@ -4,7 +4,7 @@ import { IconBox, Typo2 } from "./styled";
 import Image from "next/image";
 import icon from "../../../../../../../../../public/whychooseus2webp.webp";
 
-export const devCategoriesList = () => {
+export const DevCategoriesList = () => {
   const { t } = useTranslation();
   return [
     t("webDevelopment:devCategories.list1"),
@@ -19,7 +19,7 @@ export const devCategoriesList = () => {
 export const DevCategoriesListComponent = () => {
   return (
     <>
-      {devCategoriesList().map((item, index) => (
+      {DevCategoriesList().map((item, index) => (
         <IconBox key={index}>
           <Image src={icon} alt="icon" height={25} width={25} />
           <Typo2 variant="body1" color="initial">

@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 import { HeadTypo, SubTittleTypo } from "./styled";
 
-export const headings = () => {
+export const Headings = () => {
   const { t } = useTranslation();
   return [
     t("webDevelopment:bestCompany.heading1"),
@@ -10,7 +10,7 @@ export const headings = () => {
   ];
 };
 
-export const para = () => {
+export const Para = () => {
   const { t } = useTranslation();
   return [
     t("webDevelopment:bestCompany.para.para1"),
@@ -24,7 +24,7 @@ export const para = () => {
 export const BestCompanyHeadingAndParaComponent = () => {
   return (
     <>
-      {headings().map((item, index) => (
+      {Headings().map((item, index) => (
         <HeadTypo
           key={index}
           variant="h4"
@@ -34,7 +34,7 @@ export const BestCompanyHeadingAndParaComponent = () => {
           {item}
         </HeadTypo>
       ))}
-      {para().map((item, index) => (
+      {Para().map((item, index) => (
         <SubTittleTypo key={index} variant="subtitle1" gutterBottom>
           {item}
         </SubTittleTypo>

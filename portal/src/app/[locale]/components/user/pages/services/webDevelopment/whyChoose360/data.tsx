@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { ContentBox, HeadTypo, ImageBox, ParaTypo } from "./styled";
 import Image from "next/image";
 
-export const cardData360 = () => {
+export const CardData360 = () => {
   const { t } = useTranslation();
   return [
     {
@@ -28,7 +28,7 @@ export const cardData360 = () => {
 export const CardTextComponent = () => {
   return (
     <>
-      {cardData360().map((item, index) => (
+      {CardData360().map((item, index) => (
         <Grid key={index} item xs={12} sm={4} md={4} lg={4} xl={4}>
           <ContentBox>
             <ImageBox>
