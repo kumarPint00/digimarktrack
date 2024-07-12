@@ -1,0 +1,47 @@
+{
+    "hero": {
+        "bannerHeading": "Web Design & Development"
+    },
+    "overview": {
+        "overviewHeading": "Web Development and Design Company",
+        "overviewParaOne": "360 Solution is the Best Web Development and Web Design Company in Dubai, specialising in creating innovative and functional websites for businesses of all sizes.",
+        "overviewParaTwo": "With a dedicated team of experts, we offer professional and comprehensive services to meet the unique needs of each client, ensuring a seamless and impactful online presence.",
+        "overviewParaThree": "Whether it's web development or design, 360 Solution delivers top-notch web sites with a keen eye for detail and a focus on achieving exceptional results."
+    },
+    "benefits": {
+        "heading": "Benefits of Using Websites",
+        "text1": "Here's how websites can revolutionize your business",
+        "text2": "Your website never sleeps, making it accessible to customers anytime, anywhere.",
+        "text3": "Expand your market beyond physical boundaries and connect with a wider audience.",
+        "text4": "A professional website establishes your legitimacy and builds trust with potential customers.",
+        "text5": "Convert website visitors into paying customers through targeted marketing and lead generation strategies.",
+        "text6": "Websites offer a cost-effective way to advertise, showcase products, and provide customer service compared to traditional methods.",
+        "text7": "Don't settle for average. Let a Best Web Development Company 360 solution be your partner in crafting a website that delivers exceptional results.",
+        "boldText1": "24/7 Availability:",
+        "boldText2": "Global Reach:",
+        "boldText3": "Enhanced Credibility:",
+        "boldText4": "Boost Sales & Leads:",
+        "boldText5": "Cost-Effective Solution:"
+    },
+    "devCategories": {
+        "para": "Need the Best web Services?!! NO worries… 360 Solution will get in touch as soon as you contact to provide you affordable services…",
+        "list1": "STATIC WEB DESIGN",
+        "list2": "DYNAMIC WEB DESIGN",
+        "list3": "RESPONSIVE WEB DESIGN",
+        "list4": "WEB PORTAL DESIGN",
+        "list5": "CORPORATE WEB DESIGN",
+        "list6": "CUSTOM WEB DESIGN"
+    },
+    "whyChooseUs": {
+        "heading": "WHY CHOOSE 360 Solution",
+        "subHeading": "Design and development in perfect harmony. It's a symphony for success.",
+        "cardText": {
+            "head1": "Free Consultation",
+            "head2": "Lightning-Fast Loading Speed",
+            "head3": "100% Transparency",
+            "para1": "Identify your website's strengths and weaknesses. Discuss your unique goal and vision.Explore custom solutions for your web development and design. Get expert advice from our passionate team.",
+            "para2": "Attention Grabbers: Captivate your audience instantly with a website that loads faster than a blink. Maintain their interest and entice them to return for further engagement.",
+            "para3": "Shine a light on your operations: 100% website transparency fosters accountability and empowers your audience to make informed decisions"
+        }
+    }
+}

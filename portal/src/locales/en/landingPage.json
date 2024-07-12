@@ -1,0 +1,125 @@
+{
+    "hero": {
+        "title": "360 Digital Marketing Agency In UAE",
+        "para": "Lead Thoughts is a Performance-based digital marketing agency in UAE that delivers practical solutions with the guaranteed SEO, Web Development, PPC, SEM, and Social Media services. We look to provide you with the best digital results on all the platforms",
+        "button": "Get Started"
+    },
+    "aboutUs": {
+        "mainHeading": "About us",
+        "heading": "We Want To Give You The Best Service",
+        "para": "We are 100+ professional software engineers with more than 10 years of experience in delivering superior products Believe it because you've seen it. Here are real numbers",
+        "gridHeadingOne": "We Can Save Your Money",
+        "gridHeadingTwo": "Promiss Specific Timeline Guarantee",
+        "gridTextOne": "Production Or Trading Of Good",
+        "gridTextTwo": "100% Better Results",
+        "girdLink": "Have any Question?",
+        "experience": "5+ Years of Working Experience"
+    },
+    "bestServices": {
+        "mainHeading": "Our Best Services",
+        "heading": "We Provide Best Services",
+        "para": "Want to See our Professional Services.",
+        "link": "Click here to View More"
+    },
+    "sliderData": {
+        "heading1": "Web Design & Development",
+        "heading2": "Mobile App Development(IOS and Android)",
+        "heading3": "Digital Marketing & Strategy",
+        "para1": "We build websites that adds value to the business. Our website designs made to convert the potential customers into prospect and then into real customers.",
+        "para2": "Designs & graphics is the best medium to showcase the brand or company. We build brands form scratch starting from Logo designing to Advert designing and more.",
+        "para3": "We are a performance-driven digital agency, we create and develop digital marketing strategies and campaigns that include various digital strategy and branding, social, e-commerce & more."
+    },
+    "numberCounter": {
+        "text1": "Project Done",
+        "text2": "Team Members",
+        "text3": "Happy Clients",
+        "text4": "Awards"
+    },
+    "whyChooseUs": {
+        "mainHeading": "Why Choose Us",
+        "heading": "Unlock Revenue Growth For Your Business",
+        "para": "We are 100+ professional software engineers with mor than 10 years of experience in delivering sup erior pro Believe it because you've seen it.",
+        "button": "Veiw All More",
+        "mapHead1": "High Standard",
+        "mapHead2": "Focus On People",
+        "mapHead3": "Different Thinking",
+        "mapHead4": "Expert Team",
+        "mapPara1": "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs It can also mean to be about your grind",
+        "mapPara2": "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs It can also mean to be about your grind",
+        "mapPara3": "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs It can also mean to be about your grind",
+        "mapPara4": "Standing on business is a slang term that means to take care of your responsibilities, follow through, or handle your own affairs It can also mean to be about your grind"
+    },
+    "workProcess": {
+        "mainHeading": "Work Process",
+        "heading": "Our Work Process",
+        "gridOneData": {
+            "title1": "Describing objectives",
+            "title2": "Create customer profiles",
+            "title3": "Create Budget & Sales funnels",
+            "para1": "your company's missions and objectives, followed by discussing your KPIs or Key Performance Indicators to establish a system for tracking and measuring your progress.",
+            "para2": "You can do this easily by using the information you already have, such as name and address data, Google Analytics Audience Reports, or email marketing lists",
+            "para3": "Creating a minimum budget and conducting research on industry standards will assist you in deciding better."
+        },
+        "gridTwoData": {
+            "title1": "Examining and Improving Marketing Efforts",
+            "title2": "Select Channels & Platform",
+            "para1": "It is critical to monitor and improve your prevailing marketing efforts constantly because it allows you to take insights that are working within the company and build on them in the future.",
+            "para2": "Point out the primary areas and platforms where your strong new marketing strategy can be used."
+        }
+    },
+    "testimonials": {
+        "mainHeading": "Our Testimonials",
+        "heading": "What Our Client Says",
+        "card": {
+            "text1": "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
+            "text2": "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
+            "text3": "Their service is marked by efficiency and punctuality. Working with them has streamlined our processes and boosted productivity",
+            "text4": "I was impressed by their commitment to going the extra mile. They've helped us stay ahead of the curve in our industry",
+            "name1": "William",
+            "name2": "Charlotte",
+            "name3": "Alexander",
+            "name4": "Brooklyn"
+        }
+    },
+    "blogAndNews": {
+        "mainHeading": "Blog And News",
+        "heading": "Get More Update For Blog And News",
+        "blogAndNewsCards": {
+            "month1": "may",
+            "month2": "may",
+            "title1": "How To Organize Files At A Design Digital Agency",
+            "title2": "Social Media Marketing Strategies To Small Business",
+            "text1": "Store the Work in the Cloud. Pay Attention to File Naming Conventions Decide on Organizational Structure, Tagging.",
+            "text2": "Store the Work in the Cloud. Pay Attention to File Naming Conventions Decide on Organizational Structure, Tagging."
+        }
+    },
+    "newsLetter": {
+        "heading": "Subscribe To Our Newsletter!",
+        "para": "We are 100 professional software engineers with mor the 10 years in delive ring super products it because you've seen it",
+        "button": "Subscribe Now"
+    },
+    "footer": {
+        "para": "We are 100+ professional software engin with more than 10 years of experience in delivering superior products Believe it be cause you've seen it.",
+        "links": {
+            "heading": "Links",
+            "link1": "Home",
+            "link2": "News & Blog",
+            "link3": "About Us",
+            "link4": "Contact Us",
+            "link5": "Faq",
+            "link6": "Services",
+            "link7": "Team",
+            "link8": "Career"
+        },
+        "address": {
+            "heading": "Our Offices",
+            "address1": "United Arab Emirates",
+            "address2": "Tamani Arts offices, 5th floor office no 554, Business Bay, Dubai."
+        },
+        "copywrite": {
+            "text1": "2024 All Rights Reserved",
+            "text2": "Privacy Policy",
+            "text3": "Terms Of Use"
+        }
+    }
+}

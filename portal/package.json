@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "i18nexus pull && next dev",
+    "build": "i18nexus pull && next build",
+    "start": "i18nexus pull && next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -14,9 +14,13 @@
     "@mui/icons-material": "^5.15.18",
     "@mui/material": "^5.15.18",
     "@react-spring/web": "^9.7.3",
+    "i18next": "^23.11.5",
+    "i18next-resources-to-backend": "^1.2.1",
     "next": "14.2.3",
+    "next-i18n-router": "^5.5.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-i18next": "^14.1.2",
     "react-intersection-observer": "^9.10.2",
     "react-responsive-carousel": "^3.2.23",
     "sharp": "^0.33.4",
@@ -28,6 +32,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
+    "i18nexus-cli": "^3.4.0",
     "typescript": "^5"
   }
 }
