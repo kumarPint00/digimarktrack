@@ -43,5 +43,24 @@
             "para2": "Attention Grabbers: Captivate your audience instantly with a website that loads faster than a blink. Maintain their interest and entice them to return for further engagement.",
             "para3": "Shine a light on your operations: 100% website transparency fosters accountability and empowers your audience to make informed decisions"
         }
+    },
+    "bestCompany": {
+        "heading1": "Are you interested in finding the",
+        "heading2": "Best web development company?",
+        "para": {
+            "para1": "Stop searching, start thriving! At 360 Solution we're more than just a web development and web design company - we're your trusted guide to crafting a website masterpiece.",
+            "para2": "Unleash the power of stunning design, cutting-edge development, and exceptional results. Whether you need a sleek website to showcase your brand or a powerful eCommerce platform to skyrocket sales, we've got you covered",
+            "para3": "Ready to unlock your online potential? Contact 360 Solution today for a free consultation and let's turn your website dreams into reality!",
+            "para4": "We are Not Only Proficiency in Website Development, We also in Flutter App Development, Android App Development, iOS App Development and So Many.",
+            "para5": "Contact us today for a free consultation and unlock the full potential of your online presence!"
+        }
+    },
+    "formComponent":{
+        "heading":"HAVE ANY QUESTION?",
+        "subHeading":"Let’s Discuss About Something",
+        "para":"At our 360 Solution, Committed to Exceptiona Customer Service and Support for Web Application and Mobile App Development. Contact Us for Technical Assistance and Service Support.",
+        "socialText1":"Follow Us:",
+        "socialText2":"Get Google Map Directions",
+        "button":"Get A Quote"
     }
 }

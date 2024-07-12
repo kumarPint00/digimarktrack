@@ -1,5 +1,5 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
 import React from "react";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import {
   FormTextBox,
   MainBox,
@@ -12,6 +12,7 @@ import {
 import Image from "next/image";
 import { socialImages } from "./data";
 import Form from "./Form";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const FormComponent = () => {
   return (
@@ -19,22 +20,20 @@ const FormComponent = () => {
       <MainBox>
         <Container maxWidth="xl">
           <Typographyh5 variant="h5" color="initial" gutterBottom>
-            HAVE ANY QUESTION?
+            <TranslationAtom word="webDevelopment:formComponent.heading" />
           </Typographyh5>
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <FormTextBox>
                 <Typographyh3 variant="h3" color="initial" gutterBottom>
-                  Let’s Discuss About Something
+                  <TranslationAtom word="webDevelopment:formComponent.subHeading" />
                 </Typographyh3>
                 <Typography variant="subtitle1" color="initial">
-                  At our 360 Solution, Committed to Exceptiona Customer Service
-                  and Support for Web Application and Mobile App Development.
-                  Contact Us for Technical Assistance and Service Support.
+                  <TranslationAtom word="webDevelopment:formComponent.para" />
                 </Typography>
                 <SocialmediaBox>
                   <SocialTypo1 variant="body1" color="initial">
-                    Follow Us:
+                    <TranslationAtom word="webDevelopment:formComponent.socialText1" />
                   </SocialTypo1>
                   <Box>
                     {socialImages.map((item, index) => (
@@ -49,7 +48,7 @@ const FormComponent = () => {
                     ))}
                   </Box>
                   <SocialTypo2 variant="body1" color="initial">
-                    Get Google Map Directions
+                    <TranslationAtom word="webDevelopment:formComponent.socialText1" />
                   </SocialTypo2>
                 </SocialmediaBox>
               </FormTextBox>

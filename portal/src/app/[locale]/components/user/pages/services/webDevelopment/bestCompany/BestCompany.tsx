@@ -1,7 +1,7 @@
 import React from "react";
-import { HeadTypo, ImageBox, MainBox, SubTittleTypo } from "./styled";
+import { ImageBox, MainBox } from "./styled";
 import { Box, Container, Grid } from "@mui/material";
-import { headings, para } from "./data";
+import { BestCompanyHeadingAndParaComponent } from "./data";
 import ImageMain from "../../../../../../../../../public/bestcompany.webp";
 import Image from "next/image";
 
@@ -13,21 +13,7 @@ const BestCompany = () => {
           <Grid container spacing={2}>
             <Grid item xs={12} sm={8} md={8} lg={8} xl={8}>
               <Box>
-                {headings.map((item, index) => (
-                  <HeadTypo
-                    key={index}
-                    variant="h4"
-                    gutterBottom
-                    color={index === 0 ? "#000000" : "#6907A8"}
-                  >
-                    {item}
-                  </HeadTypo>
-                ))}
-                {para.map((item, index) => (
-                  <SubTittleTypo key={index} variant="subtitle1" gutterBottom>
-                    {item}
-                  </SubTittleTypo>
-                ))}
+                <BestCompanyHeadingAndParaComponent />
               </Box>
             </Grid>
             <Grid item xs={12} sm={4} md={4} lg={4} xl={4}>

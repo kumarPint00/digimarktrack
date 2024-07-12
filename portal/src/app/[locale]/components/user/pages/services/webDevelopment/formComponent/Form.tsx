@@ -1,7 +1,8 @@
-import { Box, Button, TextField } from "@mui/material";
 import React from "react";
+import { TextField } from "@mui/material";
 import { FormBox, FormButton, TextfieldBox } from "./styled";
 import { textfieldData } from "./data";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const Form = () => {
   return (
@@ -27,7 +28,7 @@ const Form = () => {
           />
         </TextfieldBox>
         <FormButton variant="contained" size="small">
-          Get a Quote
+          <TranslationAtom word="webDevelopment:formComponent.button" />
         </FormButton>
       </FormBox>
     </>
