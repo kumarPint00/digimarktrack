@@ -3,7 +3,7 @@ import DigitalMarketing from "../components/user/pages/services/digitalMarketing
 import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 
-const i18nNamespaces = ["landingPage", "home", "navbar", "webDevelopment"];
+const i18nNamespaces = ["landingPage", "home", "navbar", "webDevelopment", "mobileDevelopment", "digitalMarketing"];
 
 const page = async ({ params: { locale } }: any) => {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);

@@ -4,6 +4,11 @@ import { Box, Typography, styled } from "@mui/material";
 export const MainBox = styled(Box)(({ theme }) => ({
   margin: "1.5rem 0rem",
 }));
+export const ImageBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+}));
 export const HeadTypo = styled(Typography)(({ theme }) => ({
   color: "black",
   fontFamily: "Righteous",

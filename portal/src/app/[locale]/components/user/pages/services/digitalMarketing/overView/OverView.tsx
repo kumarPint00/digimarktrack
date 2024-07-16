@@ -1,9 +1,9 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import rightImage from "../../../../../../../../../public/digitalmarkoverview.webp";
 import { ImageBox, MainBox, TypoBody1, TypoH3 } from "./styled";
-import { heading, paragraph } from "./data";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const OverView = () => {
   return (
@@ -13,11 +13,13 @@ const OverView = () => {
           <Grid container spacing={5}>
             <Grid item xs={12} sm={7} md={7} lg={7} xl={7}>
               <TypoH3 variant="h3" color="initial">
-                {heading[0]}{" "}
-                <span style={{ color: "black" }}>{heading[1]}</span>
+                <TranslationAtom word="digitalMarketing:overView.heading1" />{" "}
+                <span style={{ color: "black" }}>
+                  <TranslationAtom word="digitalMarketing:overView.heading2" />
+                </span>
               </TypoH3>
               <TypoBody1 variant="body1" color="initial">
-                {paragraph}
+                <TranslationAtom word="digitalMarketing:overView.paragraph" />
               </TypoBody1>
             </Grid>
             <Grid item xs={12} sm={5} md={5} lg={5} xl={5}>

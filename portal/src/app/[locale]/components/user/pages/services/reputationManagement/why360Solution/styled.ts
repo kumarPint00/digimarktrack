@@ -2,7 +2,13 @@
 import { Box, Typography, styled } from "@mui/material";
 
 export const MainBox = styled(Box)(({ theme }) => ({
-  margin:"1.5rem 0"
+  margin: "1.5rem 0",
+}));
+export const ImageBox = styled(Box)(({ theme }) => ({
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100%",
 }));
 export const HeadParaBox = styled(Box)(({ theme }) => ({
   marginBottom: "1rem",

@@ -1,18 +1,13 @@
 import React from "react";
 import {
-  GridComponentBox,
-  GridComponentHeading,
-  GridComponentImageBox,
-  GridComponentText,
   HeadContentBox,
   MainBox,
   TypoBody1,
   TypoH5,
   Typographyh5,
 } from "./styled";
-import { Box, Container, Grid } from "@mui/material";
-import { gridData } from "../../socialMediaMarketing/whyChooseUs/data";
-import Image from "next/image";
+import {  Container, Grid } from "@mui/material";
+import { GridComponent } from "../../seo/whyChooseUs/data";
 
 const WhyChooseUs = () => {
   return (
@@ -47,23 +42,7 @@ const WhyChooseUs = () => {
             </TypoBody1>
           </HeadContentBox>
           <Grid container spacing={1}>
-            {gridData.map((item, index) => (
-              <Grid key={index} item xs={12} sm={6} md={6} lg={6} xl={6}>
-                <GridComponentBox>
-                  <GridComponentImageBox>
-                    <Image src={item.icon} alt="image" height={50} width={50} />
-                  </GridComponentImageBox>
-                  <Box>
-                    <GridComponentHeading variant="h6" color="initial">
-                      {item.heading}
-                    </GridComponentHeading>
-                    <GridComponentText variant="body2" color="initial">
-                      {item.text}
-                    </GridComponentText>
-                  </Box>
-                </GridComponentBox>
-              </Grid>
-            ))}
+            <GridComponent />
           </Grid>
         </Container>
       </MainBox>

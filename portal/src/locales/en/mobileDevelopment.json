@@ -1,0 +1,49 @@
+{
+    "hero": {
+        "heading": "mobile application development"
+    },
+    "overView": {
+        "heading": "NOT JUST BUILDING APPS BUT FUTURE BRANDS!",
+        "subHeading": "MOBILE APPLICATION DEVELOPMENT",
+        "para": {
+            "para1": "Pioneered with a vision of developing dynamic apps, 360 Solution is a dedicated app development company in Dubai that helps people worldwide to develop a robust app that could help them showcase their services or products the best. Our team of experts works closely with clients to understand their business and the type of application they desire. In a market where competition is at its peak, our developers give you the edge to move ahead of your competitors by following the latest trends and market demands. ",
+            "para2": "In the continuous online business growth, it becomes essential for you to have a responsive website with easy CTA, and our team of professionals specializes in the skills of creating dynamic, visually appealing and user-centric apps that leave lasting impressions on your visitors"
+        }
+    },
+    "knowAboutUs": {
+        "heading": "KNOW ABOUT US",
+        "subHeading": "Designing Effective Applications Development Services In Dubai and Ensuring Your Business Growth",
+        "para": {
+            "para1": "360 solution is an application development Company pioneered in 2020 with a vision of helping business enthusiasts launch applications that can help expand their business, services or products worldwide. We have a team of developers who understand the true potential of vigorous applications. ",
+            "para2": "Our team owns expertise in developing high-performing, digitally transformative and standard-quality mobile applications for various platforms that match your business requirements and are under your budget."
+        }
+    },
+    "devCategories": {
+        "heading": "We provide an array of Mobile app Designs:",
+        "para": "Need the Best web Services?!! NO worries… 360 Solution will get in touch as soon as you contact to provide you affordable services",
+        "devList": {
+            "list1": "ANDROID",
+            "list2": "IOS",
+            "list3": "FLUTTER",
+            "list4": "NATIVE APP",
+            "list5": "WEB APP",
+            "list6": "HYBRID APP"
+        }
+    },
+    "business": {
+        "heading": "WHEN BUSINESS IDEAS MEETS, INNOVATION AND MOBILE EXCELLENCE",
+        "subHeading": "Best Mobile Application Development Company in Dubai Helping Businesses Worldwide",
+        "para": {
+            "para1": "360 Solution takes pride in being a leading Mobile App Development Company in Hyderabad. Being a firm change believer,our team ensures we drive the best out of the latest technology and innovation. From individual business enthusiasts to big brands already launched in the market, we help them understand and adopt digital transformation. We carry a vision of improving people’s business lives with progressive results with the help of adaptive services and innovative technology solutions. We comprehensively analyse your business by listing issues, improvements required, objectives, challenges and goals.",
+            "para2": "This process is furthermore processed with the efforts of understanding the business, market sector and competitors to curate information amalgamated with our technical expertis and research, eventually resulting in the best solutions at a minimal cost."
+        },
+        "customGrid": {
+            "heading1": "Free Consultation",
+            "heading2": "360° Scalability",
+            "heading3": "On-Time Delivery",
+            "text1": "Get yourself a clear view of our services with our free consultation services, for which you can connect with our team, working round-the-clock to discuss your business goals and challenges. We ensure your satisfaction with each call by answering all your queries.",
+            "text2": "We can not neglect the importance of time; being true to our words, we offer assured, timely delivery. 360 Solution, a mobile application development company, confirms your scalability and flexibility and is always up to take any sort of urgency and can handle it proficiently.",
+            "text3": "We can not neglect the importance of time, and being true to our words, we offer assured timely delivery. 360 solution, being a mobile application development company, not only confirms your scalability and flexibility but is always up to take any sort of urgency and can handle it proficiently."
+        }
+    }
+}

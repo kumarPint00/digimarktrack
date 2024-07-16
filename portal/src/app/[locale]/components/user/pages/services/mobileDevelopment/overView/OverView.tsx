@@ -1,23 +1,20 @@
-import { Box, Container } from "@mui/material";
 import React from "react";
-import { para } from "./data";
-import { HeadTypo, HeadTypoH6, MainBox, SubTittleTypo } from "./styled";
+import { Container } from "@mui/material";
+import { HeadTypo, HeadTypoH6, MainBox } from "./styled";
+import { OverViewParagraphComponent } from "./data";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const OverView = () => {
   return (
     <MainBox>
       <Container maxWidth="xl">
         <HeadTypoH6 variant="h6" gutterBottom>
-          NOT JUST BUILDING APPS BUT FUTURE BRANDS!
+          <TranslationAtom word="mobileDevelopment:overView.heading" />
         </HeadTypoH6>
         <HeadTypo variant="h4" gutterBottom>
-          MOBILE APPLICATION DEVELOPMENT
+          <TranslationAtom word="mobileDevelopment:overView.subHeading" />
         </HeadTypo>
-        {para.map((item, index) => (
-          <SubTittleTypo key={index} variant="subtitle1" gutterBottom>
-            {item}
-          </SubTittleTypo>
-        ))}
+        <OverViewParagraphComponent />
       </Container>
     </MainBox>
   );

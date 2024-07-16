@@ -3,7 +3,7 @@ import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import ContentWriting from "../components/user/pages/services/contentWriting/ContentWriting";
 
-const i18nNamespaces = ["landingPage", "home", "navbar"];
+const i18nNamespaces = ["landingPage", "home", "navbar", "socialMediaMarketing"];
 
 const page = async ({ params: { locale } }: any) => {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
