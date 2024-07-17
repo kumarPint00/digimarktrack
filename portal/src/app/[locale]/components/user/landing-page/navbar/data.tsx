@@ -45,8 +45,7 @@ export const ServiceMenu = () => {
   const {t} = useTranslation();
   return (
     <>
-    <LanguageChanger />
-      <Button sx={{}}>
+      <Button >
         <Link
           style={{
             textDecoration: "none",

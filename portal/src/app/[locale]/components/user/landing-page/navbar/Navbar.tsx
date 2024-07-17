@@ -31,6 +31,7 @@ import {
 import { ServiceMenu, navItems, navLinks, useNavButtonIcon } from "./data";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import LanguageChanger from "@/components/LanguageChanger";
 
 interface Props {
   /**
@@ -41,7 +42,7 @@ interface Props {
 }
 
 export default function DrawerAppBar(props: Props) {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -57,10 +58,17 @@ export default function DrawerAppBar(props: Props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <Link key={item} href={navLinks[item]} style={{textDecoration:"none"}}>
-            <ListItem  sx={{color:"black", fontSize:"1.2rem", fontWeight:"550"}} disablePadding>
+          <Link
+            key={item}
+            href={navLinks[item]}
+            style={{ textDecoration: "none" }}
+          >
+            <ListItem
+              sx={{ color: "black", fontSize: "1.2rem", fontWeight: "550" }}
+              disablePadding
+            >
               <DrawerListItemButton>
-                <ListItemText primary={item}  />
+                <ListItemText primary={item} />
               </DrawerListItemButton>
             </ListItem>
           </Link>
@@ -72,7 +80,7 @@ export default function DrawerAppBar(props: Props) {
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
-    const navButtonIcon = useNavButtonIcon();
+  const navButtonIcon = useNavButtonIcon();
 
   return (
     <MainBox>
@@ -108,27 +116,17 @@ export default function DrawerAppBar(props: Props) {
           >
             <Image alt="logo" src={Logo} height={50} width={100} />
           </Typography>
-          
+
           <NavlinksBox>
-          <ServiceMenu />
-            {/* {navItems.map((item) => (
-              <Link key={item} href={navLinks[item]}>
-                <NavlinksButton>{item}</NavlinksButton>
-              </Link>
-            ))} */}
+            <ServiceMenu />
           </NavlinksBox>
           <NaviconbuttonBox>
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <Box sx={{ display: "flex" }}>
-                <Image
-                  src="/lang-iconwebp.webp"
-                  alt="language-icon"
-                  height={30}
-                  width={35}
-                />
+                <LanguageChanger />
               </Box>
               <Box>
-                {navButtonIcon.map((item:any, index:any) => (
+                {navButtonIcon.map((item: any, index: any) => (
                   <NavIconButton key={index} variant="outlined" size="small">
                     {item.text}
                     <ButtonIconImage

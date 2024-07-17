@@ -4,15 +4,18 @@ import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { useTranslation } from 'react-i18next';
 import i18nConfig from '@/i18nConfig';
+import { useState } from 'react';
+import Image from 'next/image';
 
 export default function LanguageChanger() {
   const { i18n } = useTranslation();
   const currentLocale = i18n.language;
   const router = useRouter();
   const currentPathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleChange = e => {
-    const newLocale = e.target.value;
+  const handleChange = (newLocale) => {
+    // const newLocale = e.target.value;
 
     // set cookie for next-i18n-router
     const days = 30;
@@ -36,11 +39,42 @@ export default function LanguageChanger() {
     router.refresh();
   };
 
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <select onChange={handleChange} value={currentLocale}>
-      <option value="en">English</option>
-      <option value="ar">Arabic</option>
-      <option value="ru">Russian</option>
-    </select>
+    <div style={{ position: 'relative', display: 'flex' }}>
+      <Image
+        src="/lang-iconwebp.webp"
+        alt="image"
+        height={30}
+        width={35}
+        onClick={toggleDropdown}
+        style={{ cursor: 'pointer' }}
+      />
+      {isOpen && (
+        <div
+          style={{
+            position: 'absolute',
+            top: '150%',
+            left: "-20px",
+            backgroundColor: 'white',
+            boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)',
+            zIndex: 1000,
+          }}
+        >
+          <div onClick={() => handleChange('en')} style={{ color: "black", padding: '5px 10px', cursor: 'pointer' }}>
+            English
+          </div>
+          <div onClick={() => handleChange('ar')} style={{ color: "black", padding: '5px 10px', cursor: 'pointer' }}>
+            Arabic
+          </div>
+          <div onClick={() => handleChange('ru')} style={{ color: "black", padding: '5px 10px', cursor: 'pointer' }}>
+            Russian
+          </div>
+        </div>
+      )}
+    </div>
   );
 }
