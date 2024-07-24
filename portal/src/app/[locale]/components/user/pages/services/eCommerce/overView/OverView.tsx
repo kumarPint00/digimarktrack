@@ -1,9 +1,9 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
-import Image from "next/image";
 import React from "react";
+import { Container, Grid } from "@mui/material";
+import Image from "next/image";
 import rightImage from "../../../../../../../../../public/eCommerce-banner 1.webp";
 import { ImageBox, MainBox, TypoBody1, TypoH3 } from "./styled";
-import { heading } from "./data";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const OverView = () => {
   return (
@@ -13,22 +13,23 @@ const OverView = () => {
           <Grid container spacing={1}>
             <Grid item xs={12} sm={7} md={7} lg={7} xl={7}>
               <TypoH3 variant="h4" color="initial">
-                {heading[0]}
+                <TranslationAtom word="eCommerce:overView.heading" />
               </TypoH3>
               <TypoBody1 variant="body1" color="initial">
-                Simply setting up an e-commerce store and waiting for customer
-                orders is not enough to ensure success.
+                <TranslationAtom word="eCommerce:overView.para" />
               </TypoBody1>
-              <TypoBody1 sx={{fontWeight:"bold"}} variant="body1" color="initial">
-                To maximize sales and profits, every E-commerce store has 2
-                essential requirements:
-              </TypoBody1>
-              <TypoBody1  variant="body1" color="initial">
-                1. E-commerce marketing services are designed to help reach their
-                target customers.
+              <TypoBody1
+                sx={{ fontWeight: "bold" }}
+                variant="body1"
+                color="initial"
+              >
+                <TranslationAtom word="eCommerce:overView.heading1" />
               </TypoBody1>
               <TypoBody1 variant="body1" color="initial">
-                2. Turn potential buyers into customers, and keep them coming back.
+                <TranslationAtom word="eCommerce:overView.text1" />
+              </TypoBody1>
+              <TypoBody1 variant="body1" color="initial">
+                <TranslationAtom word="eCommerce:overView.text2" />
               </TypoBody1>
             </Grid>
             <Grid item xs={12} sm={5} md={5} lg={5} xl={5}>

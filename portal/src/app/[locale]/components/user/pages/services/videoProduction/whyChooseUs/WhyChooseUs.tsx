@@ -6,8 +6,9 @@ import {
   TypoH5,
   Typographyh5,
 } from "./styled";
-import {  Container, Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { GridComponent } from "../../seo/whyChooseUs/data";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const WhyChooseUs = () => {
   return (
@@ -15,30 +16,23 @@ const WhyChooseUs = () => {
       <MainBox>
         <Container maxWidth="xl">
           <Typographyh5 variant="h5" color="initial" gutterBottom>
-            WHY CHOOSE US
+            <TranslationAtom word="videoProduction:whyChooseUs.heading" />
           </Typographyh5>
           <HeadContentBox>
             <TypoH5 variant="h5" color="initial">
-              Leading Video Production Services
+              <TranslationAtom word="videoProduction:whyChooseUs.subHeading" />
             </TypoH5>
             <TypoBody1 variant="body1" color="initial">
-              Our Creative Directors ensure thorough quality checks before any
-              deliverable (script, voice over, renders, animation, etc.) goes
-              out to you.
+              <TranslationAtom word="videoProduction:whyChooseUs.para1" />
             </TypoBody1>
             <TypoBody1 variant="body1" color="initial">
-              Our packages include end to end service which means client only
-              needs to tell us about their product, service and our team takes
-              care of the rest.
+              <TranslationAtom word="videoProduction:whyChooseUs.para2" />
             </TypoBody1>
             <TypoBody1 variant="body1" color="initial">
-              Every single project is managed by a highly skilled and
-              experienced Creative Director to ensure a great concept, quality
-              and timely delivery.
+              <TranslationAtom word="videoProduction:whyChooseUs.para3" />
             </TypoBody1>
             <TypoBody1 variant="body1" color="initial">
-              We use advanced project planning software to ensure that you get
-              your video delivered in the time committed by us.
+              <TranslationAtom word="videoProduction:whyChooseUs.para4" />
             </TypoBody1>
           </HeadContentBox>
           <Grid container spacing={1}>

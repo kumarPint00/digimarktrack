@@ -1,14 +1,9 @@
 import React from "react";
-import {
-  HeadContentBox,
-  MainBox,
-  TypoBody1,
-  TypoH5,
-  Typographyh5,
-} from "./styled";
+import { MainBox, Typographyh5 } from "./styled";
 import { Container, Grid } from "@mui/material";
-import { whyChooseContent } from "./data";
 import { GridComponent } from "../../seo/whyChooseUs/data";
+import { TranslationAtom } from "@/components/TranslationAtom";
+import { WhyChooseContentComponent } from "./data";
 
 const WhyChooseUs = () => {
   return (
@@ -16,18 +11,9 @@ const WhyChooseUs = () => {
       <MainBox>
         <Container maxWidth="xl">
           <Typographyh5 variant="h5" color="initial" gutterBottom>
-            WHY CHOOSE US
+            <TranslationAtom word="softwareDevelopment:whyChooseUs.heading" />
           </Typographyh5>
-          {whyChooseContent.map((item, index) => (
-            <HeadContentBox key={index}>
-              <TypoH5 variant="h5" color="initial">
-                {item.heading}
-              </TypoH5>
-              <TypoBody1 variant="body1" color="initial">
-                {item.content}
-              </TypoBody1>
-            </HeadContentBox>
-          ))}
+          <WhyChooseContentComponent />
           <Grid container spacing={1}>
             <GridComponent />
           </Grid>

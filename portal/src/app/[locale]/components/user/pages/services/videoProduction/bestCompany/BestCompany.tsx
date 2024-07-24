@@ -1,14 +1,8 @@
-import { Container } from "@mui/material";
 import React from "react";
-import {
-  HeadContentBox,
-  HeadParaBox,
-  MainBox,
-  TypoBody1,
-  TypoH3,
-  TypoH5,
-} from "./styled";
-import { bulletPoints, heading, paragraph } from "./data";
+import { Container } from "@mui/material";
+import { HeadParaBox, MainBox, TypoBody1, TypoH3 } from "./styled";
+import { TranslationAtom } from "@/components/TranslationAtom";
+import { BulletPointsComponent } from "./data";
 
 const BestCompany = () => {
   return (
@@ -17,24 +11,13 @@ const BestCompany = () => {
         <Container maxWidth="xl">
           <HeadParaBox>
             <TypoH3 variant="h4" color="initial">
-              {heading[0]}
+              <TranslationAtom word="videoProduction:bestCompany.heading" />
             </TypoH3>
-            {paragraph.map((item, index) => (
-              <TypoBody1 key={index} variant="body1" color="initial">
-                {item}
-              </TypoBody1>
-            ))}
+            <TypoBody1 variant="body1" color="initial">
+              <TranslationAtom word="videoProduction:bestCompany.para" />
+            </TypoBody1>
           </HeadParaBox>
-          {bulletPoints.map((item, index) => (
-            <HeadContentBox key={index}>
-              <TypoH5 variant="h5" color="initial">
-                {item.heading}
-              </TypoH5>
-              <TypoBody1 variant="body1" color="initial">
-                {item.content}
-              </TypoBody1>
-            </HeadContentBox>
-          ))}
+          <BulletPointsComponent />
         </Container>
       </MainBox>
     </>

@@ -3,7 +3,21 @@ import ItConsulting from "../components/user/pages/services/itConsulting/ItConsu
 import TranslationsProvider from "@/components/TranslationsProvider";
 import initTranslations from "@/app/i18n";
 
-const i18nNamespaces = ["landingPage", "home", "navbar", "webDevelopment", "socialMediaMarketing"];
+const i18nNamespaces = [
+  "landingPage",
+  "navbar",
+  "webDevelopment",
+  "contentWriting",
+  "digitalMarketing",
+  "eCommerce",
+  "graphicDesign",
+  "itConsulting",
+  "mobileDevelopment",
+  "reputationManagment",
+  "seoManagement",
+  "socialMediaMarketing",
+  "softwareDevelopment",
+];
 
 const page = async ({ params: { locale } }: any) => {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);

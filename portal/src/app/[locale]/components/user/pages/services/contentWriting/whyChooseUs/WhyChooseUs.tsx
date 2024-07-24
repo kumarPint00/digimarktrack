@@ -8,6 +8,7 @@ import {
 } from "./styled";
 import { Container, Grid } from "@mui/material";
 import { GridComponent } from "../../seo/whyChooseUs/data";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const WhyChooseUs = () => {
   return (
@@ -15,20 +16,14 @@ const WhyChooseUs = () => {
       <MainBox>
         <Container maxWidth="xl">
           <Typographyh5 variant="h5" color="initial" gutterBottom>
-            WHY CHOOSE US
+            <TranslationAtom word="contentWriting:whyChooseUs.heading" />
           </Typographyh5>
           <HeadContentBox>
             <TypoH5 variant="h5" color="initial">
-              Leading Content Writing Services
+              <TranslationAtom word="contentWriting:whyChooseUs.subHeading" />
             </TypoH5>
             <TypoBody1 variant="body1" color="initial">
-              360 Solution. has successfully spent years in the content writing
-              industry. We have a track record of more than 350+ happy
-              customers. Our professional content writing services focus on
-              accomplishing the maximum reach of your apps and products. Hence,
-              these services are enriched with impeccable and intriguing topics,
-              subtopics, headings, subheadings, quotations, information,
-              descriptions, and visuals. 
+              <TranslationAtom word="contentWriting:whyChooseUs.para" />
             </TypoBody1>
           </HeadContentBox>
           <Grid container spacing={1}>

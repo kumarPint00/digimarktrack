@@ -8,6 +8,7 @@ import {
 } from "./styled";
 import { Container, Grid } from "@mui/material";
 import { GridComponent } from "./data";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const WhyChooseUs = () => {
   return (
@@ -15,20 +16,16 @@ const WhyChooseUs = () => {
       <MainBox>
         <Container maxWidth="xl">
           <Typographyh5 variant="h5" color="initial" gutterBottom>
-            WHY CHOOSE US
+            <TranslationAtom word="seoManagement:whyChooseUs.heading" />
           </Typographyh5>
           <HeadContentBox>
             <TypoH5 variant="h5" color="initial">
-              Boost Your Business with the Best SEO Agency.
+              <TranslationAtom word="seoManagement:whyChooseUs.subHeading" />
             </TypoH5>
             <TypoBody1 variant="body1" color="initial">
-              We ensure the best SEO Services to build your brand!
+              <TranslationAtom word="seoManagement:whyChooseUs.para1" />
               <br />
-              360 solution quickly fixes your issues with strategies that work
-              across your organization and support your project’s objectives. No
-              matter what you are up to, be it growing, transforming,
-              consolidating, or centralizing, we are the support for you that
-              you can count on anytime. 
+              <TranslationAtom word="seoManagement:whyChooseUs.para2" />
             </TypoBody1>
           </HeadContentBox>
           <Grid container spacing={1}>

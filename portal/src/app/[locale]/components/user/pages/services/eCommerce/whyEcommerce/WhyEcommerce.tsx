@@ -1,14 +1,8 @@
-import { Container } from "@mui/material";
 import React from "react";
-import {
-  HeadContentBox,
-  HeadParaBox,
-  MainBox,
-  TypoBody1,
-  TypoH3,
-  TypoH5,
-} from "./styled";
-import { bulletPoints, heading, paragraph } from "./data";
+import { Container } from "@mui/material";
+import { HeadParaBox, MainBox, TypoH3 } from "./styled";
+import { TranslationAtom } from "@/components/TranslationAtom";
+import { BulletPointsComponent, ParagraphComponent } from "./data";
 
 const WhyEcommerce = () => {
   return (
@@ -17,26 +11,11 @@ const WhyEcommerce = () => {
         <Container maxWidth="xl">
           <HeadParaBox>
             <TypoH3 variant="h4" color="initial">
-              {heading[0]} <span style={{ color: "black" }}>{heading[1]}</span>
+              <TranslationAtom word="eCommerce:whyEcommerce.heading" />
             </TypoH3>
-            {paragraph.map((item, index) => (
-              <TypoBody1 key={index} variant="body1" color="initial">
-                {item}
-              </TypoBody1>
-            ))}
+            <ParagraphComponent />
           </HeadParaBox>
-          {bulletPoints.map((item, index) => (
-            <HeadContentBox key={index}>
-              <TypoH5 variant="h5" color="initial">
-                {item.heading}
-              </TypoH5>
-              {item.content.map((item, index) => (
-                <TypoBody1 key={index} variant="body1" color="initial">
-                  {item}
-                </TypoBody1>
-              ))}
-            </HeadContentBox>
-          ))}
+          <BulletPointsComponent />
         </Container>
       </MainBox>
     </>

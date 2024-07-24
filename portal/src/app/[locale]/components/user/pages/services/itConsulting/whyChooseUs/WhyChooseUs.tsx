@@ -6,8 +6,9 @@ import {
   TypoH5,
   Typographyh5,
 } from "./styled";
-import {  Container, Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { GridComponent } from "../../seo/whyChooseUs/data";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 const WhyChooseUs = () => {
   return (
@@ -15,23 +16,18 @@ const WhyChooseUs = () => {
       <MainBox>
         <Container maxWidth="xl">
           <Typographyh5 variant="h5" color="initial" gutterBottom>
-            WHY CHOOSE US
+            <TranslationAtom word="itConsulting:whyChooseUs.heading" />
           </Typographyh5>
           <HeadContentBox>
             <TypoH5 variant="h5" color="initial">
-              IT Consultation from 360 Solution
+              <TranslationAtom word="itConsulting:whyChooseUs.subHeading" />
             </TypoH5>
             <TypoBody1 variant="body1" color="initial">
-              At 360 Solution, we have a different approach when it comes to
-              helping businesses with their technology needs. We believe in
-              creating solutions that not only solve the problem but also add
-              value to the business. With our services, you can expect top-notch
-              expertise in the field of technology and IT consulting that will
-              help your business grow and succeed.
+              <TranslationAtom word="itConsulting:whyChooseUs.para" />
             </TypoBody1>
           </HeadContentBox>
           <Grid container spacing={1}>
-           <GridComponent />
+            <GridComponent />
           </Grid>
         </Container>
       </MainBox>

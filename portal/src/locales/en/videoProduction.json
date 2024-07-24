@@ -1,0 +1,48 @@
+{
+    "hero": {
+        "heading": "Video Production"
+    },
+    "overView": {
+        "heading": "Best Animation And Video Production Company",
+        "para1": "We have been producing video content for two decades with an amalgamation of creativity, strategy, and technology. With roots in the feature film industry and having produced films that won international acclaim, we are a team of highly creative and experienced individuals.",
+        "para2": "Our approach to video production is a blend of strategy, creativity, and technology. While we drive the story telling in a strategic way to deliver the right message to your target audience, we incorporate creative and technical elements to produce high quality content.",
+        "para3": "We have a range of reputed clientele from various sectors. Here are a few brands we worked with."
+    },
+    "bestCompany": {
+        "heading": "Our Video Production Services",
+        "para": "We specialize in creating High Quality Customized Visual Content for brands and businesses of all sizes across India. If you would like to know more or need a customized service, talk to one of our experts.",
+        "bulletPoints": {
+            "heading1": "Ad Films",
+            "heading2": "YouTube Ads",
+            "heading3": "Product Videos",
+            "heading4": "Corporate films",
+            "heading5": "Explainer Videos",
+            "heading6": "Animation videos",
+            "para1": "We produce video advertisements of all types and offer comprehensive solutions. From story boarding to post-production, it’s all on us. Regardless of the medium of distribution, advertisements can be customized based on your campaign objective.",
+            "para2": "Short and crisp video ads for YouTube. We offer standard packages for all types of YouTube video ads. These videos are great if you have a clear call to action defined. Also ideal for regular promotion of your brand or service on social media.",
+            "para3": "According to Wyzowl, 88% of customers reported that they are more likely to buy a product if they see a video about it. We help you craft interesting product videos that can drive sales and increase brand engagement.",
+            "para4": "Present your organization profile in an elegant and professional way. We make corporate videos that are engaging and align with your organizational values. We offer several creative treatments for corporate videos. From corporate stakeholder videos to internal communication films, we do it all.",
+            "para5": "Explainer videos are the perfect choice if you are looking to increase audience engagement with your product or service. They can also be a great addition to your content calendar. We offer explainer videos in both animation and live action formats.",
+            "para6": "We produce video advertisements of all types and offer comprehensive solutions. From storyboarding to post-production, it’s all on us. Regardless of the medium of distribution, advertisements can be customized based on your campaign objective. Reach out to one of our experts to know more."
+        }
+    },
+    "devCategories": {
+        "para": "Need the Best web Services?!! NO worries… 360 Solution will get in touch as soon as you contact to provide you affordable services…",
+        "list": {
+            "list1": "Animated Explainer Videos",
+            "list2": "3D Product Commercials",
+            "list3": "Stock Footage Commercials",
+            "list4": "Corporate Video Shoot",
+            "list5": "App Walk through Videos",
+            "list6": "Short Ad Videos"
+        }
+    },
+    "whyChooseUs":{
+        "heading":"WHY CHOOSE US",
+        "subHeading":"Leading Video Production Services",
+        "para1":"Our Creative Directors ensure thorough quality checks before any deliverable (script, voice over, renders, animation, etc.) goes out to you.",
+        "para2":"Our packages include end to end service which means client only needs to tell us about their product, service and our team takes care of the rest.",
+        "para3":"Every single project is managed by a highly skilled and experienced Creative Director to ensure a great concept, quality and timely delivery.",
+        "para4":"We use advanced project planning software to ensure that you get your video delivered in the time committed by us."
+    }
+}
