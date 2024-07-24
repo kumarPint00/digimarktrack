@@ -1,12 +1,13 @@
 import {useTranslations} from 'next-intl';
 import LandingPage from '../components/user/landing-page/page';
- 
-export default function Index() {
+import {unstable_setRequestLocale} from 'next-intl/server';
+export default function Index({
+  params:{locale}
+}) {
   const t = useTranslations('IndexPage');
 
-  
+  unstable_setRequestLocale(locale);
   return (
-    // <h1>{t('title')}</h1>
     <LandingPage/>
 
   ) 
