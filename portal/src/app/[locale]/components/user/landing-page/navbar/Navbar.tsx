@@ -32,6 +32,9 @@ import { ServiceMenu, navItems, navLinks, useNavButtonIcon } from "./data";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "@/components/LanguageChanger";
+import { useRouter } from "next/navigation";
+import ContactAndChat from "@/components/ContactAndChat";
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 interface Props {
   /**
@@ -45,6 +48,7 @@ export default function DrawerAppBar(props: Props) {
   const { t } = useTranslation();
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const router = useRouter();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -82,6 +86,12 @@ export default function DrawerAppBar(props: Props) {
 
   const navButtonIcon = useNavButtonIcon();
 
+  const { handleWhatsappClick, handlePhoneClick } = ContactAndChat();
+  const contactAndChatIcons = [
+    { icon: "/telephoneWhite.png", click: handlePhoneClick },
+    { icon: "/whatsapp.png", click: handleWhatsappClick },
+  ];
+
   return (
     <MainBox>
       <CssBaseline />
@@ -109,12 +119,28 @@ export default function DrawerAppBar(props: Props) {
             component="div"
             sx={{
               flexGrow: 1,
-              display: { xs: "none", sm: "flex" },
+              display: { xs: "flex", sm: "flex" },
               alignItems: "center",
-              justifyContent: "flex-start",
+              justifyContent: { xs: "end", sm: "flex-start" },
             }}
           >
-            <Image alt="logo" src={Logo} height={50} width={100} />
+            <Box sx={{ marginRight: "0px", display: { sm: "none" } }}>
+              <LanguageChanger />
+            </Box>
+            <Box sx={{ marginRight: "0px", display: { sm: "none" } }}>
+              {contactAndChatIcons.map((item, index) => (
+                <Image
+                  key={index}
+                  onClick={item.click}
+                  alt="logo"
+                  src={item.icon}
+                  height={30}
+                  width={30}
+                  style={{marginLeft:"15px"}}
+                />
+              ))}
+            </Box>
+            {/* <Image alt="logo" src={Logo} height={50} width={100} /> */}
           </Typography>
 
           <NavlinksBox>
@@ -127,7 +153,12 @@ export default function DrawerAppBar(props: Props) {
               </Box>
               <Box>
                 {navButtonIcon.map((item: any, index: any) => (
-                  <NavIconButton key={index} variant="outlined" size="small">
+                  <NavIconButton
+                    onClick={item.click}
+                    key={index}
+                    variant="outlined"
+                    size="small"
+                  >
                     {item.text}
                     <ButtonIconImage
                       src={item.icon}

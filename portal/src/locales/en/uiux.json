@@ -1,0 +1,38 @@
+{
+    "hero": {
+        "heading": "UI & UX Design"
+    },
+    "overView": {
+        "heading": "UI And UX Design Services",
+        "para": "We offer innovative UI & UX design services at 360 solution aimed at delivering an excellent finished product in a timely manner. Through an innovative design process, our in-house creative unit functions as a dedicated design studio within a comprehensive software company. We strive to deliver profoundly engaging mobile and web applications, including prototype designing, testing, and customer experience research."
+    },
+    "bestCompany": {
+        "heading": "Benefits of Our UI/UX Services",
+        "para": "Engaging with 360 solution UI/UX design services means leveraging 05 years of our experience working with Fortune 300 firms. We offer expertise in front-end design, customer experience mapping, low-code mobile platforms, app analytics and more.",
+        "bulletPoints": {
+            "heading1": "A Decade of Scaling Design Heights",
+            "heading2": "Multi-Industry Expertise",
+            "heading3": "Primed for Perfection",
+            "para1": "Find robust software solutions with our UI/UX design services. From molding rudimentary event apps into interactive experiences to crafting enterprise software for Fortune 500 companies, our seasoned design team brings your every idea to life with cutting-edge tools and technologies. In 2023, 360 Solution was included in three prestigious award categories from Clutch.co: Top .NET Developers in London, Top Software Developers, and Top Web Developers in the dental industry. These accolades further underscore our standing as industry trailblazers in software development and digital business solutions. Our refined design process and standardized  approach guarantee a final product that is both visually compelling and functional, tailored to your precise expectations.",
+            "para2": "Our user experience design services have fortified businesses across 11 industries. Intellectsoft's design team boasts a distinguished track record of crafting apps and software systems tailored to various sectors. Through comprehensive root cause analyses and our UI design services, we create interactive interfaces and intricate animation designs to ensure an immersive user experience journey. Our in-depth post-analysis guarantees a powerful, seamless cross-platform utility, resulting in a beautifully polished product that marries aesthetics with functionality. Whether you're in healthcare, retail, or any industry in between, our expertise stands ready to propel your digital experience to the next level.",
+            "para3": "To provide quality UI/UX design services at 360 Solution, we adhere to tried-and-true in-house standards, driving creativity through a structured lens. Our designers utilize proven systems, undergo meticulous reviews, and learn from impactful practices and toolsets. Through ongoing mentoring, our design team is skillful and organized – well-versed in delivering excellence. This structured approach is validated by myriad case studies, epitomizing the exceptional service we consistently provide."
+        }
+    },
+    "devCategories": {
+        "heading": "Features of Our UI and UX Design Services",
+        "para": "Our team has a rich history in creating intuitive and coherent user experiences, ensuring customers have an enjoyable experience when interacting with your product or website. We provide comprehensive research and analysis to identify user needs and goals, so you can be sure the end product is tailored to your audience.",
+        "listpara": "Need the Best web Services?!! NO worries… 360 Solution will get in touch as soon as you contact to provide you affordable services…",
+        "list": {
+            "list1": "AR experience design",
+            "list2": "Mobile app UX and UI design services",
+            "list3": "Cross-platform experiences design",
+            "list4": "UI and UX consulting",
+            "list5": "Design workshops",
+            "list6": "Web design services"
+        }
+    },
+    "whyChooseUs": {
+        "heading": "How We Deliver Perfection With Our Exemplary UI And UX Design Services",
+        "para": "Over a decade, we have fine-tuned our process for delivering excellent UI and UX services. Our expert designers adhere to established standards, workflows, and guidelines, ensuring the final product fits your needs perfectly within your timeline. Leveraging a broad suite of tools, technologies, domain expertise, and a client-centric approach, we bring innovation at the intersection of quality, precision, and efficiency."
+    }
+}

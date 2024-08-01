@@ -6,6 +6,7 @@ import Hero from "./hero/Hero";
 import OverView from "./overView/OverView";
 import BestCompany from "./bestCompany/BestCompany";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
+import GlobalFooterComponent from "@/components/GlobalFooterComponent";
 
 const SoftwareDevelopment = () => {
   return (
@@ -16,7 +17,7 @@ const SoftwareDevelopment = () => {
       <BestCompany />
       <WhyChooseUs />
       <FormComponent />
-      <FooterComponent />
+      <GlobalFooterComponent />
     </>
   );
 };

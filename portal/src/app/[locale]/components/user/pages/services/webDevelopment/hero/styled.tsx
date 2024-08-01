@@ -9,7 +9,7 @@ export const MainBox = styled(Box)(({ theme }) => ({
   height: "100vh",
   width: "100%",
   [theme.breakpoints.down("sm")]: {
-    backgroundPosition: "inherit",
+    backgroundPosition: "bottom",
   },
 }));
 

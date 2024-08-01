@@ -48,8 +48,8 @@ export default function LanguageChanger() {
       <Image
         src="/lang-iconwebp.webp"
         alt="image"
-        height={30}
-        width={35}
+        height={35}
+        width={40}
         onClick={toggleDropdown}
         style={{ cursor: 'pointer' }}
       />

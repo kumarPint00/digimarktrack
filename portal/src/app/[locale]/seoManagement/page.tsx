@@ -17,6 +17,9 @@ const i18nNamespaces = [
   "seoManagement",
   "socialMediaMarketing",
   "softwareDevelopment",
+  "videoProduction",
+  "uiux",
+  "career"
 ];
 
 const page = async ({ params: { locale } }: any) => {

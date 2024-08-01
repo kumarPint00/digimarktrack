@@ -1,20 +1,57 @@
 "use client";
-export const navItems = ["Home", "Services", "Career", "Blog", "About Us"];
+import ContactAndChat from "@/components/ContactAndChat";
+
+export const navItems = [
+  "Home",
+  "Web Development",
+  "Mobile Development",
+  "Digital Marketing",
+  "Social Media Marketing",
+  "Reputation Management",
+  "SEO Management",
+  "E-Commerce",
+  "Graphic Design",
+  "Software Development",
+  "IT Consulting",
+  "Content Writing",
+  "Video Production",
+  "UI/UX",
+  "Career",
+];
 
 export const useNavButtonIcon = () => {
+  const { handleWhatsappClick, handlePhoneClick } = ContactAndChat();
   const { t } = useTranslation();
   return [
-    { text: t("navbar:navContact"), icon: "/contact-uswebp.webp" },
-    { text: t("navbar:navTalk"), icon: "/Lets talkwebp.webp" },
+    {
+      text: t("navbar:navContact"),
+      icon: "/contact-uswebp.webp",
+      click: handlePhoneClick,
+    },
+    {
+      text: t("navbar:navTalk"),
+      icon: "/Lets talkwebp.webp",
+      click: handleWhatsappClick,
+    },
   ];
 };
 
 export const navLinks: any = {
   Home: "/",
-  Services: "/components/user/pages/services",
-  Career: "/components/user/pages/career",
-  Blog: "/components/user/pages/blog",
-  "About Us": "/components/user/pages/aboutus",
+  "Web Development": "/webDevelopment",
+  "Mobile Development": "/mobileDevelopment",
+  "Digital Marketing": "/digitalMarketing",
+  "Social Media Marketing": "/socialMedia",
+  "Reputation Management": "/reputationManagement",
+  "SEO Management": "/seoManagement",
+  "E-Commerce": "/eCommerce",
+  "Graphic Design": "/graphicDesign",
+  "Software Development": "/softwareDevelopment",
+  "IT Consulting": "/itConsulting",
+  "Content Writing": "/contentWriting",
+  "Video Production": "/videoProduction",
+  "UI/UX": "/uiuxDesign",
+  Career: "/career",
 };
 
 import Button from "@mui/material/Button";
@@ -42,10 +79,10 @@ export const ServiceMenu = () => {
     setAnchorE2(null);
   };
 
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
-      <Button >
+      <Button>
         <Link
           style={{
             textDecoration: "none",
@@ -113,7 +150,9 @@ export const ServiceMenu = () => {
           <CustomMenuItem onClick={handleClose}>Graphic Design</CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/softwareDevelopment">
-          <CustomMenuItem onClick={handleClose}>Software Development</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            Software Development
+          </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/itConsulting">
           <CustomMenuItem onClick={handleClose}>IT Consulting</CustomMenuItem>
@@ -122,7 +161,12 @@ export const ServiceMenu = () => {
           <CustomMenuItem onClick={handleClose}>Content Writing</CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/videoProduction">
-          <CustomMenuItem onClick={handleClose}>Video Production</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            Video Production
+          </CustomMenuItem>
+        </NavigationLinkTag>
+        <NavigationLinkTag href="/uiuxDesign">
+          <CustomMenuItem onClick={handleClose}>UI/UX Design</CustomMenuItem>
         </NavigationLinkTag>
       </Menu>
       <Button
@@ -138,7 +182,18 @@ export const ServiceMenu = () => {
           fontWeight: 600,
         }}
       >
-        {t("navbar:navCareer")}
+        <Link
+          style={{
+            textDecoration: "none",
+            color: "black",
+            textTransform: "capitalize",
+            fontSize: "15px",
+            fontWeight: 600,
+          }}
+          href="/career"
+        >
+          {t("navbar:navCareer")}
+        </Link>
       </Button>
     </>
   );

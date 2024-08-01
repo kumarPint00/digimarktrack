@@ -7,6 +7,7 @@ import OverView from "./overView/OverView";
 import BestCompany from "./bestCompany/BestCompany";
 import DevCategories from "./devCategories/DevCategories";
 import WhyChooseUs from "./whyChooseUs/WhyChooseUs";
+import GlobalFooterComponent from "@/components/GlobalFooterComponent";
 
 const VideoProduction = () => {
   return (
@@ -18,7 +19,7 @@ const VideoProduction = () => {
       <DevCategories />
       <WhyChooseUs />
       <FormComponent />
-      <FooterComponent />
+      <GlobalFooterComponent />
     </>
   );
 };

@@ -4,10 +4,10 @@ import Hero from "./hero/Hero";
 import OverView from "./overView/OverView";
 import Benefits from "./benefits/Benefits";
 import DevCategories from "./devCategories/DevCategories";
-import FooterComponent from "../../../landing-page/footer/FooterComponent";
 import WhyChoose360 from "./whyChoose360/WhyChoose360";
 import BestCompany from "./bestCompany/BestCompany";
 import FormComponent from "./formComponent/FormComponent";
+import GlobalFooterComponent from "@/components/GlobalFooterComponent";
 
 const WebDevelopment = () => {
   return (
@@ -20,7 +20,7 @@ const WebDevelopment = () => {
       <WhyChoose360 />
       <BestCompany />
       <FormComponent />
-      <FooterComponent />
+      <GlobalFooterComponent />
     </>
   );
 };

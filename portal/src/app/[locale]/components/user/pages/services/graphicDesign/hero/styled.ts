@@ -31,7 +31,10 @@ export const MainBox = styled(Box)(({ theme }) => ({
     textAlign: "center",
     color: "white",
     fontFamily:"Zen Dots, sans-serif",
-    textTransform:"capitalize"
+    textTransform:"capitalize",
+    [theme.breakpoints.down('sm')]: {
+      color: "#fdc003",
+    },
   }));
   
   export const HeroTypobody2 = styled(Typography)(({ theme }) => ({
