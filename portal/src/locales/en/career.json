@@ -1,5 +1,77 @@
 {
     "hero": {
         "heading": "Career"
+    },
+    "overView": {
+        "heading": "CAREERS AT 360 SOLUTION",
+        "subHeading": "Work with us",
+        "heading3": "Why 360 Solution ?",
+        "para1": "We’re always looking to cultivate a diverse, talented team of individuals who are eager to learn and use their skills to craft powerful results.",
+        "para2": "360 Solution is a full-service digital marketing agency. We are passionate about crafting stunning and successful digital marketing strategies that drive growth, engagement, and brand awareness.",
+        "para3": "We offer a compelling blend of culture, career growth, and outstanding opportunities that newcomers typically don’t find in the full-service digital marketing industry.",
+        "para4": "A career at 360 Solution is an opportunity to be part of something special. Our team consists of innovators, problem-solvers and go-getters who are passionate about digital marketing and dedicated to crafting powerful solutions for our clients."
+    },
+    "careerAt360": {
+        "heading": "What career at 360 Solution looks like?",
+        "para": "At our agency, you’ll be exposed to a host of interesting digital marketing challenges that will keep you stimulated and engaged. You’ll also have the chance to work alongside experienced professionals who are experts in their respective fields.",
+        "points": {
+            "point1": "Work with dynamic and experienced professionals",
+            "point2": "Participate in innovative and stimulating projects",
+            "point3": "Opportunities for career progression on the path to leadership",
+            "point4": "Mentorship from senior professionals with exceptional industry knowledge",
+            "point5": "Leadership coaching to help reach the next level",
+            "point6": "Competitive salary and benefits",
+            "point7": "Fun learning sessions",
+            "point8": "Festive Celebrations",
+            "point9": "Weekend team lunches"
+        }
+    },
+    "Opportunities": {
+        "heading": "Opportunities And Perks",
+        "bulletPoints": {
+            "heading1": "Performance Based Growth",
+            "heading2": "Leadership Coaching",
+            "heading3": "Cross-Functional Opportunities",
+            "heading4": "Wellness Leave",
+            "heading5": "Career Advancement",
+            "heading6": "Rewards and recognitions",
+            "para1": "Our performance-based culture fosters you with increased responsibility, greater autonomy and considerablerewards.",
+            "para2": "Our leadership coaching program helps employees take their skills to the next level and move up the ladder intheir career.",
+            "para3": "We offer our employees the ability to explore a variety of fields and departments in our agency, to find their truepotential.",
+            "para4": "We understand that taking care of your physical, mental, and emotional health is essential for performing wellon the job.",
+            "para5": "We provide employees with opportunities to learn and advance in their careers, empowering them to grow in their current roles.",
+            "para6": "We strive to nurture our employees & believe in rewarding them for their hard work and commitment."
+        }
+    },
+    "jobsInDubai":{
+        "heading":"Social Media And Digital Marketing Jobs in Dubai",
+        "subHeading":"What's your passion?",
+        "job1":"SEO Professional",
+        "job2":"Social Media Professional",
+        "job3":"Digital Media Marketer",
+        "job4":"Content Writing Professional",
+        "job5":"Business Development Executive",
+        "button1":"Job Description",
+        "button2":"Apply"
+    },
+    "internship":{
+        "heading":"Internship Opportunities",
+        "subHeadings":{
+            "heading1":"Kickstart your Career in Digital Marketing with our Internship program.",
+            "heading2":"Who can join this program:",
+            "heading3":"There is no charge for taking up the internship program.",
+            "heading4":"Application & Selection Process: "
+        },
+        "para":{
+            "para1":"At 360 solution, we offer a unique and exciting opportunity for young professionals to get hands-on experience in the field of digital marketing. Our internships provide invaluable experience and a great learning environment for new talent.",
+            "para2":"In this Internship Program, you will get opportunity to work with experienced professionals to build the necessary skillset and knowledge in order to launch your career in the Digital Industry.",
+            "para3":"On successful completion of the Internship program, you will get a certification from 360 Solution. This certificate will help you in your future projects.",
+            "para4":"Those who are passionate and keen to develop their skills in digital marketing including SEO, Social Media,Google Ads, Content writing, Email marketing and many more.",
+            "para5":"This Internship duration is 3 months. This program requires a minimum commitment of 20 hours/week.",
+            "para6":"Stage 1: Applicants will have to fill up an online application form.",
+            "para7":"Stage 2: Selected candidates will have to go through an online test.",
+            "para8":"Stage 3: Selected candidates will go through an online/offline interview session with the mentors.",
+            "para9":"Stage 4: Successful candidates will get selected for the Internship Program."
+        }
     }
 }
