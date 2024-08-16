@@ -24,4 +24,5 @@ export const TypoBody1 = styled(Typography)(({ theme }) => ({
   marginTop: "0.8rem",
   fontSize: "1.2rem",
   textAlign: "justify",
+  
 }));
