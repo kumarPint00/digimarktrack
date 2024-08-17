@@ -59,6 +59,14 @@ export const NaviconbuttonBox = styled(Box)(({ theme }) => ({
   borderRadius: "30px",
   zIndex: "1",
 }));
+export const MainLogoImage = styled(Image)(({ theme }) => ({
+  [theme.breakpoints.down("sm")]: {
+    display: "none",
+  },
+  [theme.breakpoints.up("sm")]: {
+    display: "block",
+  },
+}));
 export const MainBox = styled(Box)(({ theme }) => ({
   display: "flex",
 }));

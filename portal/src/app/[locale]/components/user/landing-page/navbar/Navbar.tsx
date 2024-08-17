@@ -22,6 +22,7 @@ import {
   DrawerMainBox,
   DrawerTypoh6,
   MainBox,
+  MainLogoImage,
   NavIconButton,
   NaviconbuttonBox,
   NavlinksBox,
@@ -140,7 +141,7 @@ export default function DrawerAppBar(props: Props) {
                 />
               ))}
             </Box>
-            {/* <Image alt="logo" src={Logo} height={50} width={100} /> */}
+            <MainLogoImage alt="logo" src={Logo} height={50} width={100} />
           </Typography>
 
           <NavlinksBox>

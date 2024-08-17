@@ -1,1 +1,22 @@
-{"navCareer":"Career","navContact":"Contact","navHome":"Home","navServices":"Services","navTalk":"Let's Talk"}
+{
+    "navCareer": "Career",
+    "navContact": "Contact",
+    "navHome": "Home",
+    "navServices": "Services",
+    "navTalk": "Let's Talk",
+    "serviceLinks": {
+        "link1":"Web Development",
+        "link2":"Mobile Development",
+        "link3":"Digital Marketing",
+        "link4":"Social Media Marketing",
+        "link5":"Reputation Management",
+        "link6":"E-Commerce",
+        "link7":"SEO Management",
+        "link8":"Graphic Design",
+        "link9":"Software Development",
+        "link10":"IT Consulting",
+        "link11":"Content Writing",
+        "link12":"Video Production",
+        "link13":"UI/UX Design"
+    }
+}

@@ -62,6 +62,7 @@ import Link from "next/link";
 import { CustomMenuItem, NavigationLinkTag } from "./styled";
 import LanguageChanger from "../../../../../../components/LanguageChanger";
 import { useTranslation } from "react-i18next";
+import { TranslationAtom } from "@/components/TranslationAtom";
 
 export const ServiceMenu = () => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -118,55 +119,69 @@ export const ServiceMenu = () => {
         }}
       >
         <NavigationLinkTag href="/webDevelopment">
-          <CustomMenuItem onClick={handleClose}>Web Development</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            <TranslationAtom word="navbar:serviceLinks.link1" />
+          </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/mobileDevelopment">
           <CustomMenuItem onClick={handleClose}>
-            Mobile Development
+            <TranslationAtom word="navbar:serviceLinks.link2" />
           </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/digitalMarketing">
           <CustomMenuItem onClick={handleClose}>
-            Digital Marketing
+            <TranslationAtom word="navbar:serviceLinks.link3" />
           </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/socialMedia">
           <CustomMenuItem onClick={handleClose}>
-            Social Media Marketing
+            <TranslationAtom word="navbar:serviceLinks.link4" />
           </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/reputationManagement">
           <CustomMenuItem onClick={handleClose}>
-            Reputation Management
+            <TranslationAtom word="navbar:serviceLinks.link5" />
           </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/eCommerce">
-          <CustomMenuItem onClick={handleClose}>E-Commerce</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            <TranslationAtom word="navbar:serviceLinks.link6" />
+          </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/seoManagement">
-          <CustomMenuItem onClick={handleClose}>SEO Management</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            <TranslationAtom word="navbar:serviceLinks.link7" />
+          </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/graphicDesign">
-          <CustomMenuItem onClick={handleClose}>Graphic Design</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            <TranslationAtom word="navbar:serviceLinks.link8" />
+          </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/softwareDevelopment">
           <CustomMenuItem onClick={handleClose}>
-            Software Development
+            <TranslationAtom word="navbar:serviceLinks.link9" />
           </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/itConsulting">
-          <CustomMenuItem onClick={handleClose}>IT Consulting</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            <TranslationAtom word="navbar:serviceLinks.link10" />
+          </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/contentWriting">
-          <CustomMenuItem onClick={handleClose}>Content Writing</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            <TranslationAtom word="navbar:serviceLinks.link11" />
+          </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/videoProduction">
           <CustomMenuItem onClick={handleClose}>
-            Video Production
+            <TranslationAtom word="navbar:serviceLinks.link12" />
           </CustomMenuItem>
         </NavigationLinkTag>
         <NavigationLinkTag href="/uiuxDesign">
-          <CustomMenuItem onClick={handleClose}>UI/UX Design</CustomMenuItem>
+          <CustomMenuItem onClick={handleClose}>
+            <TranslationAtom word="navbar:serviceLinks.link13" />
+          </CustomMenuItem>
         </NavigationLinkTag>
       </Menu>
       <Button
